@@ -2,6 +2,8 @@
 
 This repo contains the ZMK firmware for the Sofle v2 low-profile wireless mechanical keyboard, which is an enhanced version of the original Sofle keyboard. The keyboard features a low-profile design, wireless connectivity, and a built-in display on the right-hand side.
 
+To use the keyboard with a central dongle, check the firmware available at [zmk-sofle-dongle](https://github.com/carlosedp/zmk-sofle-dongle).
+
 ![alt text](image.png)
 
 This keyboard can be found on many vendors from AliExpress.
@@ -27,7 +29,7 @@ If changing just the keymap or settings, flashing only one side (usually the lef
 ## Building Locally
 
 ```sh
-git clone https://github.com/carlosedp/zmk-soufle.git
+git clone https://github.com/carlosedp/zmk-sofle.git
 cd zmk-soufle
 
 podman run -it --rm --security-opt label=disable --workdir /zmk -v $(pwd):/zmk -v /tmp:/temp docker.io/zmkfirmware/zmk-build-arm:4.1-branch /bin/bash
