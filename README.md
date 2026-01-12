@@ -44,24 +44,21 @@ west build -d ./build/left -p \
   -s /zmk/zmk/app \
   -S studio-rpc-usb-uart \
   -- -DSHIELD="nice_view_gem" -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n \
-  -DZMK_CONFIG="/zmk/config" \
-  -DZMK_EXTRA_MODULES="/zmk/eyelash_sofle"
+  -DZMK_CONFIG="/zmk/config"
 
 # Build right half
 west build -d ./build/right -p \
   -b "eyelash_sofle_right" \
   -s /zmk/zmk/app \
   -- -DSHIELD="nice_view_gem" \
-  -DZMK_CONFIG="/zmk/config" \
-  -DZMK_EXTRA_MODULES="/zmk/eyelash_sofle"
+  -DZMK_CONFIG="/zmk/config"
 
 # Settings Reset
 west build -d ./build/settings_reset -p \
   -b "nice_nano_v2" \
   -s /zmk/zmk/app \
   -- -DSHIELD="settings_reset" \
-  -DZMK_CONFIG="/zmk/config" \
-  -DZMK_EXTRA_MODULES="/zmk/eyelash_sofle"
+  -DZMK_CONFIG="/zmk/config"3
 
 # The resulting .bin files will be located in the respective build directories:
 # ./build/left/zephyr/zmk.uf2
