@@ -461,7 +461,10 @@ ZMK Firmware Local Build Script Using Containerized Environment
 
 The script allows you to build ZMK firmware targets defined in a YAML configuration file without the need to install all build dependencies locally. It uses a container runtime (Podman or Docker) to run the build environment.
 
-Usage: $0 <command>
+Usage: $0 [flags] <command>
+
+Flags:
+  -i, --incremental    Enable incremental builds (skip pristine build, faster)
 
 Commands:
   init             Initialize the repository (west init + update)
@@ -485,6 +488,8 @@ Environment Variables:
 
 Examples:
   $0 build                           # Build all firmware from build.yaml
+  $0 -i build_left                   # Fast incremental build of left side
+  $0 --incremental build             # Incremental build of all targets
   $0 build eyelash_sofle_left        # Build specific target
   $0 list                            # List all available targets
   $0 build_left                      # Build only left side
@@ -494,7 +499,7 @@ Examples:
   $0 gitignore                       # Update .gitignore from west.yml
   $0 copy                            # Copy artifacts to ./artifacts
   $0 copy /path/to/dir               # Copy artifacts to custom directory
-  INCREMENTAL=true $0 build_left     # Faster incremental build
+  INCREMENTAL=true $0 build_left     # Alternative way to enable incremental
   BUILD_CONFIG=custom.yaml $0 build  # Use custom build config
   RUNTIME=docker $0 build            # Use docker instead of podman
 
@@ -502,6 +507,38 @@ EOF
 }
 
 # Check if an argument was provided
+if [ $# -eq 0 ]; then
+  log_error "Error: No command provided"
+  echo ""
+  show_help
+  exit 1
+fi
+
+# Parse flags
+INCREMENTAL_FLAG=""
+ARGS=()
+while [[ $# -gt 0 ]]; do
+  case $1 in
+  -i | --incremental)
+    INCREMENTAL_FLAG="true"
+    shift
+    ;;
+  *)
+    ARGS+=("$1")
+    shift
+    ;;
+  esac
+done
+
+# Set incremental mode if flag was provided
+if [ -n "$INCREMENTAL_FLAG" ]; then
+  INCREMENTAL="true"
+fi
+
+# Restore positional parameters
+set -- "${ARGS[@]}"
+
+# Check if we still have a command after parsing flags
 if [ $# -eq 0 ]; then
   log_error "Error: No command provided"
   echo ""
