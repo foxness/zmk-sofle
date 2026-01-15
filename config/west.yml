@@ -39,5 +39,8 @@ manifest:
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
+    - name: hammerbeam-slideshow
+      remote: gpeye
+      revision: main
   self:
     path: config
