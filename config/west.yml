@@ -21,7 +21,7 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: zmk-sofle-dongle
+    - name: zmk-sofle
       remote: carlosedp
       revision: main
     - name: prospector-zmk-module

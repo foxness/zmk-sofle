@@ -2,6 +2,8 @@
 
 This repo contains the ZMK firmware for the Sofle v2 low-profile wireless mechanical keyboard, which is an enhanced version of the original Sofle keyboard. The keyboard features a low-profile design, wireless connectivity, and a built-in display on the right-hand side.
 
+This repository supports both the left and right halves of the keyboard, as well as the central dongle that manages the wireless connection and displays battery status. The action that builds the firmware will have three artifacts: left, right and dongle firmwares and also the left/right firmwares for the standalone (no dongle) version of the keyboard.
+
 ![alt text](image.png)
 
 This keyboard can be found on many vendors from AliExpress.
