@@ -29,12 +29,7 @@ set -euo pipefail
 RUNTIME="${RUNTIME:-podman}" # Could be docker or podman
 IMG="${ZMK_IMAGE:-docker.io/zmkfirmware/zmk-build-arm:4.1-branch}"
 ENV="-e CMAKE_PREFIX_PATH=/zmk/zephyr:${CMAKE_PREFIX_PATH:-}"
-INTERACTIVE="-it"
-if [ "$RUNTIME" == "docker" ]
-then
-  INTERACTIVE=""
-fi
-COMMAND="$RUNTIME run $INTERACTIVE --rm --workdir /zmk -v $(pwd):/zmk -v /tmp:/temp $ENV $IMG"
+COMMAND="$RUNTIME run --rm --workdir /zmk -v $(pwd):/zmk -v /tmp:/temp $ENV $IMG"
 BUILD_CONFIG="${BUILD_CONFIG:-build.yaml}"
 INCREMENTAL="${INCREMENTAL:-false}" # Set to true to skip -p (pristine) flag for faster incremental builds
 
@@ -56,15 +51,15 @@ THIS_SCRIPT=$(readlink -f $0)
 SCRIPT_DIR=$(dirname $THIS_SCRIPT)
 SCRIPT_DIR_NAME=$(basename $SCRIPT_DIR)
 case $SCRIPT_DIR_NAME in
-  zmk-sofle)    KEYBOARD="eyelash_sofle" ;; # For backwards compatibility
-  zmk-config-*) KEYBOARD=${SCRIPT_DIR_NAME#zmk-config-} ;;
-  zmk-*)        KEYBOARD=${SCRIPT_DIR_NAME#zmk-} ;;
-  *)
-    if [ -z "${KEYBOARD:+set}" ]
-    then
-      log_error "KEYBOARD not set and cannot be found from directory name: $SCRIPT_DIR_NAME"
-      exit 1
-    fi
+zmk-sofle) KEYBOARD="eyelash_sofle" ;; # For backwards compatibility
+zmk-config-*) KEYBOARD=${SCRIPT_DIR_NAME#zmk-config-} ;;
+zmk-*) KEYBOARD=${SCRIPT_DIR_NAME#zmk-} ;;
+*)
+  if [ -z "${KEYBOARD:+set}" ]; then
+    log_error "KEYBOARD not set and cannot be found from directory name: $SCRIPT_DIR_NAME"
+    exit 1
+  fi
+  ;;
 esac
 
 # Parse YAML file and extract build configurations

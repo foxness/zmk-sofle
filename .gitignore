@@ -13,9 +13,10 @@ tools/
 
 # West projects from config/west.yml
 zmk/
-zmk-sofle-dongle/
+zmk-sofle/
 prospector-zmk-module/
 zmk-dongle-display/
 nice-view-gem/
 zmk-dongle-screen/
 zmk-nice-oled/
+hammerbeam-slideshow/
