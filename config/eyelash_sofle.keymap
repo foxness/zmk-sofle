@@ -16,7 +16,7 @@
 
 &msc {
     acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
+    time-to-max-speed-ms = <100>;     // 300
     delay-ms = <0>;                   // 0
 };
 
@@ -38,6 +38,21 @@
     };
 
     behaviors {
+        layer1mt: momentary_or_toggle_layer1 {
+            // If held, momentary switch to layer 1 or double tap to toggle layer 1
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&to 1>;
+        };
+
+        layer3mt: momentary_or_toggle_layer3 {
+            // If held, momentary switch to layer 3 or double tap to toggle layer 3
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 3>, <&to 3>;
+        };
     };
 
     combos {
@@ -45,79 +60,128 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <14 28 40>;
+            key-positions = <14 28 40>; // Keys Q, S, Z
         };
     };
 
     macros {
-        SHIFT_MCLK: SHIFT_MCLK {
+        snap_win: snapshot_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_SHIFT>,
-                <&macro_press>,
-                <&mkp MB3>,
-                <&macro_pause_for_release>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp S>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &mkp MB3>;
+                <&kp LEFT_COMMAND &kp LEFT_SHIFT>;
 
-            label = "SHIFT_MCLK";
+            label = "SNAPSHOT_WIN";
+        };
+
+        snap_mac_clip: snapshot_mac_clip {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &kp LEFT_CONTROL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND &kp LEFT_CONTROL &kp LEFT_SHIFT>;
+
+            label = "SNAPSHOT_MAC_CLIP";
+        };
+
+        snap_mac_file: snapshot_mac_file {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND &kp LEFT_SHIFT>;
+
+            label = "SNAPSHOT_MAC_FILE";
         };
     };
 
+// Bottom left key is the encoder click
+// Column 7 (middle column) is the joystick from the right half
+
     keymap {
         compatible = "zmk,keymap";
-
-        Base {
+//
+// Windows layout
+//
+        layer_0 {
             bindings = <
-&kp ESC                            &kp N1     &kp N2        &kp N3        &kp N4  &kp N5           &kp UP_ARROW     &kp N6     &kp N7  &kp N8     &kp N9           &kp N0      &kp K_COFFEE
-&kp TAB                            &kp Q      &kp W         &kp E         &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U   &kp I      &kp O            &kp P       &kp BSLH
-&mt RC(RA(RIGHT_SHIFT)) BACKSPACE  &kp A      &kp S         &kp D         &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J   &kp K      &kp L            &kp SEMI    &kp APOS
-&kp LSHFT                          &kp Z      &kp X         &kp C         &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA  &kp DOT          &kp FSLH    &kp RIGHT_SHIFT
-&kp C_MUTE                         &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &mo 1   &kp BACKSPACE    &kp ENTER        &kp SPACE  &mo 3   &kp ENTER  &kp RIGHT_SHIFT  &kp DELETE
+&kp ESC     &kp N1          &kp N2           &kp N3          &kp N4            &kp N5                  &kp UP_ARROW                &kp N6          &kp N7         &kp N8         &kp N9        &kp N0             &kp BACKSPACE
+&kp TAB     &kp Q           &kp W            &kp E           &kp R             &kp T                   &kp DOWN_ARROW              &kp Y           &kp U          &kp I          &kp O         &kp P              &kp BSLH
+&kp GRAVE   &kp A           &kp S            &kp D           &kp F             &kp G                   &kp LEFT_ARROW              &kp H           &kp J          &kp K          &kp L         &kp SEMI           &kp APOS
+&kp LSHFT   &kp Z           &kp X            &kp C           &kp V             &kp B                   &kp RIGHT_ARROW             &kp N           &kp M          &kp COMMA      &kp DOT       &kp FSLH           &kp RIGHT_SHIFT
+&kp C_MUTE                  &kp LCTRL        &kp LEFT_GUI    &kp LEFT_ALT      &layer1mt   &kp SPACE   &kp ENTER       &kp SPACE   &kp ENTER       &mo 4          &kp RIGHT_ALT  &snap_win
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "Base Layer";
+            display-name = "Windows";
         };
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&to 2       &kp F1           &kp F2          &kp F3           &kp F4           &kp F5                   &mmv MOVE_UP               &kp F6           &kp F7        &kp F8         &kp F9         &kp F10           &trans
+&trans      &none            &kp UP          &mkp LCLK        &mkp MCLK        &mkp RCLK                &mmv MOVE_DOWN             &kp PG_UP        &kp LC(LEFT)  &kp UP         &kp LC(RIGHT)  &kp MINUS         &kp EQUAL
+&trans      &kp LEFT         &kp DOWN        &kp RIGHT        &none            &mkp MB5                 &mmv MOVE_LEFT             &kp PG_DN        &kp LEFT      &kp DOWN       &kp RIGHT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI          &mmv MOVE_RIGHT            &rgb_ug RGB_BRI  &kp HOME      &kp END        &kp C_VOL_DN   &kp C_VOL_UP      &trans
+&kp C_MUTE                   &trans          &trans           &trans           &trans          &trans   &mkp LCLK        &trans    &trans           &trans        &trans         &trans
             >;
 
-            display-name = "layer1";
+            display-name = "Win Fn";
             sensor-bindings = <&scroll_encoder>;
         };
-
+//
+// Mac layout
+//
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp ESC     &kp N1          &kp N2          &kp N3           &kp N4            &kp N5                   &kp UP_ARROW               &kp N6          &kp N7         &kp N8         &kp N9           &kp N0            &kp BACKSPACE
+&kp TAB     &kp Q           &kp W           &kp E            &kp R             &kp T                    &kp DOWN_ARROW             &kp Y           &kp U          &kp I          &kp O            &kp P             &kp BSLH
+&kp GRAVE   &kp A           &kp S           &kp D            &kp F             &kp G                    &kp LEFT_ARROW             &kp H           &kp J          &kp K          &kp L            &kp SEMI          &kp APOS
+&kp LSHFT   &kp Z           &kp X           &kp C            &kp V             &kp B                    &kp RIGHT_ARROW            &kp N           &kp M          &kp COMMA      &kp DOT          &kp FSLH          &kp RIGHT_SHIFT
+&kp C_MUTE                  &kp LCTRL       &kp LEFT_ALT     &kp LEFT_GUI      &layer3mt   &kp SPACE    &kp ENTER       &kp SPACE  &kp ENTER       &mo 4          &kp RIGHT_ALT  &snap_mac_clip
             >;
 
-            display-name = "layer2";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            display-name = "Mac";
         };
 
         Symbol {
             bindings = <
-&trans  &trans        &trans     &trans    &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp QUESTION  &kp PIPE   &kp LBRC  &kp RIGHT_BRACE        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp COLON     &kp EQUAL  &kp LPAR  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans     &trans    &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans     &trans    &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&to 0       &kp F1           &kp F2          &kp F3           &kp F4           &kp F5                   &mmv MOVE_UP               &kp F6           &kp F7        &kp F8         &kp F9           &kp F10           &trans
+&trans      &none            &kp UP          &mkp LCLK        &mkp MCLK        &mkp RCLK                &mmv MOVE_DOWN             &kp PG_UP        &kp LC(LEFT)  &kp UP         &kp LC(RIGHT)    &kp MINUS         &kp EQUAL
+&trans      &kp LEFT         &kp DOWN        &kp RIGHT        &none            &mkp MB5                 &mmv MOVE_LEFT             &kp PG_DN        &kp LEFT      &kp DOWN       &kp RIGHT        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI          &mmv MOVE_RIGHT            &rgb_ug RGB_BRI  &kp HOME      &kp END        &kp C_VOL_DN     &kp C_VOL_UP      &trans
+&kp C_MUTE                   &trans          &trans           &trans           &trans          &trans   &mkp LCLK        &trans    &trans           &trans        &trans         &snap_mac_file
             >;
 
-            label = "Symbol Layer";
+            display-name = "Mac Fn";
+            sensor-bindings = <&scroll_encoder>;
         };
+
+        layer_4 {
+            bindings = <
+&studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &kp C_VOL_UP         &trans   &trans      &trans      &kp F11    &kp F12      &kp BACKSPACE
+&trans          &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans                &kp C_VOL_DN         &trans   &trans      &kp PG_UP   &trans     &kp UNDER    &kp PLUS
+&trans          &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans                &trans               &trans   &kp HOME    &kp PG_DN   &kp END    &kp LBRC     &kp RBRC
+&trans          &sys_reset    &trans          &bootloader   &trans        &trans                &trans               &trans   &trans      &sys_reset  &soft_off  &bootloader  &trans
+&trans                        &trans          &trans        &trans        &trans      &trans    &kp C_MUTE   &trans  &trans   &trans      &trans      &trans
+            >;
+
+            display-name = "Utils";
+            sensor-bindings = <&scroll_encoder>;
+        };
+
     };
 };
