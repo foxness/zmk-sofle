@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 3>, <&to 3>;
+            bindings = <&mo 2>, <&to 2>;
         };
 
         mtfast: mtfast {
@@ -134,11 +134,11 @@
 
         base_layer {
             bindings = <
-&kp ESC                             &kp N1          &kp N2        &kp N3        &kp N4  &kp N5           &kp UP_ARROW     &kp N6     &kp N7  &kp N8          &kp N9     &kp N0      &kp K_COFFEE
-&kp TAB                             &kp Q           &kp W         &kp E         &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U   &kp I           &kp O      &kp P       &kp BSLH
-&mtfast RC(RA(RIGHT_SHIFT)) ESCAPE  &kp A           &kp S         &kp D         &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J   &kp K           &kp L      &kp SEMI    &kp APOS
-&kp GRAVE                           &kp Z           &kp X         &kp C         &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA       &kp DOT    &kp FSLH    &none
-&kp C_MUTE                          &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &mo 1   &kp BACKSPACE    &kp ENTER        &kp SPACE  &mo 3   &kp LEFT_SHIFT  &kp ENTER  &kp ESCAPE
+&kp ESC                                &kp N1            &kp N2        &kp N3        &kp N4  &kp N5           &kp UP_ARROW     &kp N6     &kp N7  &kp N8          &kp N9     &kp N0      &kp K_COFFEE
+&kp TAB                                &kp Q             &kp W         &kp E         &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U   &kp I           &kp O      &kp P       &kp BSLH
+&mtfast RC(RA(RIGHT_SHIFT)) BACKSPACE  &kp A             &kp S         &kp D         &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J   &kp K           &kp L      &kp SEMI    &kp APOS
+&kp GRAVE                              &kp Z             &kp X         &kp C         &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA       &kp DOT    &kp FSLH    &mo 3
+&kp C_MUTE                             &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &mo 1   &kp BACKSPACE    &kp ENTER        &kp SPACE  &mo 2   &kp LEFT_SHIFT  &kp ENTER  &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -148,26 +148,13 @@
         function_layer {
             bindings = <
 &trans      &kp F1  &kp F2     &kp F3     &kp F4     &kp F5    &mmv MOVE_UP     &kp F6     &kp F7        &kp F8    &kp F9         &kp F10           &trans
-&trans      &none   &none      &mkp MB4   &mkp MB5   &none     &mmv MOVE_DOWN   &kp PG_UP  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp MINUS         &kp EQUAL
+&trans      &none   &none      &mkp MB4   &mkp MB5   &none     &mmv MOVE_DOWN   &kp PG_UP  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp MINUS         &kp EQUAL
 &trans      &none   &mkp MCLK  &mkp RCLK  &mkp LCLK  &none     &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &trans  &trans     &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans     &kp HOME      &kp END   &kp C_VOL_DN   &kp C_VOL_UP      &trans
 &kp C_MUTE  &trans  &trans     &trans     &trans     &trans    &mkp LCLK        &trans     &trans        &trans    &trans         &snap_mac_file
             >;
 
             display-name = "Function";
-            sensor-bindings = <&scroll_encoder>;
-        };
-
-        system_layer {
-            bindings = <
-&studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOL_UP  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans     &trans       &trans
-&trans          &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_VOL_DN  &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans     &trans       &trans
-&trans          &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &trans        &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &trans     &trans       &trans
-&trans          &sys_reset    &soft_off       &bootloader   &trans        &trans          &trans        &trans           &trans           &sys_reset       &soft_off  &bootloader  &trans
-&trans          &trans        &trans          &trans        &trans        &trans          &kp C_MUTE    &trans           &trans           &trans           &trans     &trans
-            >;
-
-            display-name = "System";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -181,6 +168,19 @@
             >;
 
             label = "Symbol";
+        };
+
+        system_layer {
+            bindings = <
+&studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOL_UP  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans     &trans       &trans
+&trans          &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_VOL_DN  &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans     &trans       &trans
+&trans          &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &trans        &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &trans     &trans       &trans
+&trans          &sys_reset    &soft_off       &bootloader   &trans        &trans          &trans        &trans           &trans           &sys_reset       &soft_off  &bootloader  &trans
+&trans          &trans        &trans          &trans        &trans        &trans          &kp C_MUTE    &trans           &trans           &trans           &trans     &trans
+            >;
+
+            display-name = "System";
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
