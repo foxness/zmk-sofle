@@ -96,11 +96,11 @@
 
         symbol_layer {
             bindings = <
-&trans  &trans        &trans     &trans    &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp QUESTION  &kp PIPE   &kp LBRC  &kp RIGHT_BRACE        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp COLON     &kp EQUAL  &kp LPAR  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans     &trans    &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans     &trans    &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPSLOCK  &trans        &trans     &trans    &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &kp QUESTION  &kp PIPE   &kp LBRC  &kp RIGHT_BRACE        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &kp COLON     &kp EQUAL  &kp LPAR  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans     &trans    &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans     &trans    &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Symbol";
