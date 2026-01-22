@@ -37,6 +37,13 @@
         tap-ms = <100>;
     };
 
+    mtL1: mtL1 {
+        compatible = "zmk,behavior-tap-dance";
+        label = "MT L1";
+        #binding-cells = <0>;
+        bindings = <&mo 1>, <&to 1>;
+    };
+
     behaviors {
     };
 
