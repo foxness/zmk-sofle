@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - COFFEE
+  - KP 2
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '`', s: '~'}
+  - {t: '`', h: '$$mdi:apple-keyboard-shift$$', s: '~'}
   - Z
   - X
   - C
@@ -54,17 +54,17 @@ layers:
   - {t: /, s: '?'}
   - System
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - Function
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
+  - Function
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Symbol
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-esc$$
+  - KP 1
   Function:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -122,8 +122,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
