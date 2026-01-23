@@ -54,17 +54,82 @@ layers:
   - {t: /, s: '?'}
   - System
   - $$mdi:volume-off$$
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-space$$', h: 'Ctl+AltGr+$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&key_repeat'
+  - Navigation
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Extend
-  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - KP 1
+  - '&key_repeat'
+  Navigation:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: AltGr+1, s: AltGr+!}
+  - {t: AltGr+2, s: AltGr+@}
+  - {t: AltGr+3, s: AltGr+#}
+  - {t: AltGr+4, s: AltGr+$}
+  - {t: AltGr+5, s: AltGr+%}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: AltGr+6, s: AltGr+^}
+  - {t: AltGr+7, s: AltGr+&}
+  - {t: AltGr+8, s: AltGr+*}
+  - {t: AltGr+9, s: AltGr+(}
+  - {t: AltGr+0, s: AltGr+)}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+Q
+  - AltGr+W
+  - AltGr+E
+  - AltGr+R
+  - AltGr+T
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+Y
+  - AltGr+U
+  - AltGr+I
+  - AltGr+O
+  - AltGr+P
+  - {t: 'AltGr+[', s: 'AltGr+{'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+A
+  - AltGr+S
+  - AltGr+D
+  - AltGr+F
+  - AltGr+G
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+H
+  - AltGr+J
+  - AltGr+K
+  - AltGr+L
+  - {t: AltGr+;, s: 'AltGr+:'}
+  - {t: AltGr+', s: AltGr+"}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+Z
+  - AltGr+X
+  - AltGr+C
+  - AltGr+V
+  - AltGr+B
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+N
+  - AltGr+M
+  - {t: 'AltGr+,', s: AltGr+<}
+  - {t: AltGr+., s: AltGr+>}
+  - {t: AltGr+/, s: 'AltGr+?'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   Extend:
   - $$mdi:apple-keyboard-caps$$
   - {t: Ctl+1, s: Ctl+!}
@@ -188,9 +253,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
