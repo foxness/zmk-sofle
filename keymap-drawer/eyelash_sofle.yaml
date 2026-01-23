@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   Base:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: 'AltGr+$$mdi:apple-keyboard-shift$$'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - KP 2
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
   - Q
   - W
   - E
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
+  - {t: '[', s: '{'}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
@@ -65,6 +65,71 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - KP 1
+  Extend:
+  - $$mdi:apple-keyboard-caps$$
+  - {t: Ctl+1, s: Ctl+!}
+  - {t: Ctl+2, s: Ctl+@}
+  - {t: Ctl+3, s: Ctl+#}
+  - {t: Ctl+4, s: Ctl+$}
+  - {t: Ctl+5, s: Ctl+%}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+6, s: Ctl+^}
+  - {t: Ctl+7, s: Ctl+&}
+  - {t: Ctl+8, s: Ctl+*}
+  - {t: Ctl+9, s: Ctl+(}
+  - {t: Ctl+0, s: Ctl+)}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Q
+  - Ctl+W
+  - Ctl+E
+  - Ctl+R
+  - Ctl+T
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Y
+  - Ctl+U
+  - Ctl+I
+  - Ctl+O
+  - Ctl+P
+  - {t: 'Ctl+[', s: 'Ctl+{'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+A
+  - Ctl+S
+  - Ctl+D
+  - Ctl+F
+  - Ctl+G
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+H
+  - Ctl+J
+  - Ctl+K
+  - Ctl+L
+  - {t: Ctl+;, s: 'Ctl+:'}
+  - {t: Ctl+', s: Ctl+"}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+N
+  - Ctl+M
+  - {t: 'Ctl+,', s: Ctl+<}
+  - {t: Ctl+., s: Ctl+>}
+  - {t: Ctl+/, s: 'Ctl+?'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   Function:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -126,71 +191,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  Extend:
-  - $$mdi:apple-keyboard-caps$$
-  - {t: Ctl+1, s: Ctl+!}
-  - {t: Ctl+2, s: Ctl+@}
-  - {t: Ctl+3, s: Ctl+#}
-  - {t: Ctl+4, s: Ctl+$}
-  - {t: Ctl+5, s: Ctl+%}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Ctl+6, s: Ctl+^}
-  - {t: Ctl+7, s: Ctl+&}
-  - {t: Ctl+8, s: Ctl+*}
-  - {t: Ctl+9, s: Ctl+(}
-  - {t: Ctl+0, s: Ctl+)}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Q
-  - Ctl+W
-  - Ctl+E
-  - Ctl+R
-  - Ctl+T
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Y
-  - Ctl+U
-  - Ctl+I
-  - Ctl+O
-  - Ctl+P
-  - {t: Ctl+\, s: Ctl+|}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+A
-  - Ctl+S
-  - Ctl+D
-  - Ctl+F
-  - Ctl+G
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+H
-  - Ctl+J
-  - Ctl+K
-  - Ctl+L
-  - {t: Ctl+;, s: 'Ctl+:'}
-  - {t: Ctl+', s: Ctl+"}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+B
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+N
-  - Ctl+M
-  - {t: 'Ctl+,', s: Ctl+<}
-  - {t: Ctl+., s: Ctl+>}
-  - {t: Ctl+/, s: 'Ctl+?'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
