@@ -92,7 +92,7 @@
         triangle_layer {
             display-name = "Triangle";
             bindings = <
-&trans  &kp RA(N1)        &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)  &kp RA(N7)  &kp RA(N8)     &kp RA(N9)   &kp RA(N0)    &trans
+&trans  &kp RA(N1)        &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)  &kp RA(N7)  &kp RA(N8)     &kp RA(N9)   &kp RA(N0)    &kp RA(KP_NUMBER_1)
 &trans  &kp RA(Q)         &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp RA(Y)   &kp RA(U)   &kp RA(I)      &kp RA(O)    &kp RA(P)     &kp RA(LEFT_BRACKET)
 &trans  &kp RA(A)         &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp RA(H)   &kp RA(J)   &kp RA(K)      &kp RA(L)    &kp RA(SEMI)  &kp RA(APOS)
 &trans  &kp RA(Z)         &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp RA(N)   &kp RA(M)   &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)  &trans
@@ -105,7 +105,7 @@
         square_layer {
             display-name = "Square";
             bindings = <
-&kp CAPSLOCK  &kp RC(N1)  &kp RC(N2)  &kp RC(N3)  &kp RC(N4)  &kp RC(N5)    &trans  &kp RC(N6)  &kp RC(N7)  &kp RC(N8)     &kp RC(N9)   &kp RC(N0)    &trans
+&kp CAPSLOCK  &kp RC(N1)  &kp RC(N2)  &kp RC(N3)  &kp RC(N4)  &kp RC(N5)    &trans  &kp RC(N6)  &kp RC(N7)  &kp RC(N8)     &kp RC(N9)   &kp RC(N0)    &kp RC(KP_NUMBER_1)
 &trans        &kp RC(Q)   &kp RC(W)   &kp RC(E)   &kp RC(R)   &kp RC(T)     &trans  &kp RC(Y)   &kp RC(U)   &kp RC(I)      &kp RC(O)    &kp RC(P)     &kp RC(LEFT_BRACKET)
 &trans        &kp RC(A)   &kp RC(S)   &kp RC(D)   &kp RC(F)   &kp RC(G)     &trans  &kp RC(H)   &kp RC(J)   &kp RC(K)      &kp RC(L)    &kp RC(SEMI)  &kp RC(APOS)
 &trans        &kp RC(Z)   &kp RC(X)   &kp RC(C)   &kp RC(V)   &kp RC(B)     &trans  &kp RC(N)   &kp RC(M)   &kp RC(COMMA)  &kp RC(DOT)  &kp RC(FSLH)  &trans
@@ -117,10 +117,10 @@
 
         circle_layer {
             bindings = <
-&trans      &kp F1  &kp F2     &kp F3     &kp F4     &kp F5    &mmv MOVE_UP     &kp F6     &kp F7        &kp F8    &kp F9         &kp F10           &trans
-&trans      &none   &none      &mkp MB4   &mkp MB5   &none     &mmv MOVE_DOWN   &kp PG_UP  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp MINUS         &kp EQUAL
-&trans      &none   &mkp MCLK  &mkp RCLK  &mkp LCLK  &none     &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans  &trans     &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans     &kp HOME      &kp END   &kp F11        &kp F12           &trans
+&trans      &kp F1  &kp F2     &kp F3     &kp F4     &kp F5    &mmv MOVE_UP     &kp F6     &kp F7        &kp F8    &kp F9         &kp F10        &trans
+&trans      &none   &none      &mkp MB4   &mkp MB5   &none     &mmv MOVE_DOWN   &kp PG_UP  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp MINUS      &kp EQUAL
+&trans      &none   &mkp MCLK  &mkp RCLK  &mkp LCLK  &none     &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &kp BACKSLASH  &kp RIGHT_BRACKET
+&trans      &trans  &trans     &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans     &kp HOME      &kp END   &kp F11        &kp F12        &trans
 &kp C_MUTE  &trans  &trans     &trans     &trans     &trans    &mkp LCLK        &trans     &trans        &trans    &trans         &trans
             >;
 
