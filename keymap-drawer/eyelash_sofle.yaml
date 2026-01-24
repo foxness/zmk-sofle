@@ -78,7 +78,7 @@ layers:
   - {t: AltGr+8, s: AltGr+*}
   - {t: AltGr+9, s: AltGr+(}
   - {t: AltGr+0, s: AltGr+)}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+KP 1
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+Q
   - AltGr+W
@@ -143,7 +143,7 @@ layers:
   - {t: Ctl+8, s: Ctl+*}
   - {t: Ctl+9, s: Ctl+(}
   - {t: Ctl+0, s: Ctl+)}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+KP 1
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Q
   - Ctl+W
@@ -233,7 +233,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '[', s: '{'}
+  - {t: \, s: '|'}
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
