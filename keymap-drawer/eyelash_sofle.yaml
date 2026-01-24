@@ -55,17 +55,17 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - Navigation
+  - Triangle
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Extend
+  - Square
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&key_repeat'
-  Navigation:
+  Triangle:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: AltGr+1, s: AltGr+!}
   - {t: AltGr+2, s: AltGr+@}
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Extend:
+  Square:
   - $$mdi:apple-keyboard-caps$$
   - {t: Ctl+1, s: Ctl+!}
   - {t: Ctl+2, s: Ctl+@}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Function:
+  Circle:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
