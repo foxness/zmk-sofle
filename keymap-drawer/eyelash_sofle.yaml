@@ -64,7 +64,7 @@ layers:
   - Square
   - '&key_repeat'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '&key_repeat'
+  - $$mdi:apple-keyboard-option$$
   Triangle:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: AltGr+1, s: AltGr+!}
@@ -271,8 +271,8 @@ layers:
   - RGB TOG
   - RGB EFF
   - RGB EFR
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP 2
+  - KP 3
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
@@ -284,9 +284,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB BRI
   - RGB BRD
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP 4
+  - KP 5
+  - KP 6
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
