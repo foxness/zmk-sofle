@@ -329,10 +329,10 @@ layers:
   - '0'
   - HOME
   - END
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F16
   - F17
   - F18
@@ -342,10 +342,10 @@ layers:
   - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Alt+$$mdi:arrow-right-bold$$
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F10
   - F4
   - F5
@@ -358,7 +358,7 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: \, s: '|'}
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F1
   - F2
@@ -367,29 +367,29 @@ layers:
   - F23
   - PgDn
   - PgUp
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F12
   - F7
   - F8
   - F9
   - F15
   - F24
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
