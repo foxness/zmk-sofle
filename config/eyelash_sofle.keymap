@@ -101,11 +101,11 @@
         triangle_layer {
             display-name = "Triangle";
             bindings = <
-&trans  &kp RA(N1)        &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)  &kp RA(N7)  &kp RA(N8)     &kp RA(N9)   &kp RA(N0)    &kp RA(KP_NUMBER_1)
-&trans  &kp RA(Q)         &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp RA(Y)   &kp RA(U)   &kp RA(I)      &kp RA(O)    &kp RA(P)     &kp RA(LEFT_BRACKET)
-&trans  &kp RA(A)         &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp RA(H)   &kp RA(J)   &kp RA(K)      &kp RA(L)    &kp RA(SEMI)  &kp RA(APOS)
-&trans  &kp RA(Z)         &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp RA(N)   &kp RA(M)   &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)  &trans
-&trans  &kp LEFT_CONTROL  &trans      &trans      &trans      &trans        &trans  &trans      &trans      &trans         &trans       &trans
+&kp RA(ESCAPE)  &kp RA(N1)        &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)  &kp RA(N7)  &kp RA(N8)     &kp RA(N9)   &kp RA(N0)    &kp RA(KP_NUMBER_1)
+&kp RA(TAB)     &kp RA(Q)         &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp RA(Y)   &kp RA(U)   &kp RA(I)      &kp RA(O)    &kp RA(P)     &kp RA(LEFT_BRACKET)
+&trans          &kp RA(A)         &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp RA(H)   &kp RA(J)   &kp RA(K)      &kp RA(L)    &kp RA(SEMI)  &kp RA(APOS)
+&trans          &kp RA(Z)         &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp RA(N)   &kp RA(M)   &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)  &trans
+&trans          &kp LEFT_CONTROL  &trans      &trans      &trans      &trans        &trans  &trans      &trans      &trans         &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
