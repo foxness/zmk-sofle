@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&key_repeat'
   - $$mdi:volume-off$$
   - Arrow
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Square
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-option$$
   Triangle:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -274,10 +274,10 @@ layers:
   - F19
   - F20
   - F21
+  - {t: '`', s: '~'}
   - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Alt+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -287,12 +287,12 @@ layers:
   - F6
   - F13
   - F22
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F1
@@ -300,12 +300,12 @@ layers:
   - F3
   - F14
   - F23
-  - PgDn
+  - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
-  - {t: '`', s: '~'}
+  - PgDn
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - F12
   - F7
