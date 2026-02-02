@@ -165,8 +165,8 @@
         system_layer {
             bindings = <
 &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_UP    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
-&trans          &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_VOLUME_DOWN  &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &tog 5
-&trans          &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &trans             &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &trans           &trans           &trans
+&trans          &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &kp C_VOLUME_DOWN  &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp KP_NUMBER_4  &tog 5           &kp KP_NUMBER_5
+&trans          &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &trans             &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8
 &trans          &sys_reset    &soft_off       &bootloader   &trans        &trans          &trans             &trans           &trans           &sys_reset       &soft_off        &bootloader      &trans
 &trans          &trans        &trans          &trans        &trans        &trans          &kp C_MUTE         &trans           &trans           &trans           &trans           &trans
             >;
