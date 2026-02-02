@@ -66,7 +66,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-option$$
   Triangle:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+$$mdi:keyboard-esc$$
   - {t: AltGr+1, s: AltGr+!}
   - {t: AltGr+2, s: AltGr+@}
   - {t: AltGr+3, s: AltGr+#}
@@ -79,7 +79,7 @@ layers:
   - {t: AltGr+9, s: AltGr+(}
   - {t: AltGr+0, s: AltGr+)}
   - AltGr+KP 1
-  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+$$mdi:keyboard-tab$$
   - AltGr+Q
   - AltGr+W
   - AltGr+E
