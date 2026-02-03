@@ -60,7 +60,7 @@ layers:
   - Triangle
   - {t: '$$mdi:backspace$$', type: backspace}
   - AltGr+KP 0
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - Square
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
