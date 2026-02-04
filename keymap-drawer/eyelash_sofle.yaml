@@ -60,9 +60,9 @@ layers:
   - Triangle
   - {t: '$$mdi:backspace$$', type: backspace}
   - AltGr+KP 0
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - Square
+  - {t: '$$mdi:keyboard-space$$', h: Square}
   - $$mdi:keyboard-space$$
+  - Square
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&key_repeat'
   Triangle:
@@ -190,9 +190,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Circle:
@@ -255,9 +255,9 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Arrow:
