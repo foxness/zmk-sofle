@@ -60,7 +60,7 @@ layers:
   - Triangle
   - {t: '$$mdi:backspace$$', type: backspace}
   - AltGr+KP 0
-  - {t: '$$mdi:keyboard-space$$', h: Square}
+  - Square
   - $$mdi:keyboard-space$$
   - Square
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -78,7 +78,7 @@ layers:
   - {t: AltGr+8, s: AltGr+*}
   - {t: AltGr+9, s: AltGr+(}
   - {t: AltGr+0, s: AltGr+)}
-  - AltGr+KP 1
+  - AltGr+F13
   - AltGr+$$mdi:keyboard-tab$$
   - AltGr+Q
   - AltGr+W
@@ -104,7 +104,7 @@ layers:
   - AltGr+K
   - AltGr+L
   - {t: AltGr+;, s: 'AltGr+:'}
-  - {t: AltGr+', s: AltGr+"}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+Z
   - AltGr+X
@@ -116,8 +116,8 @@ layers:
   - AltGr+M
   - {t: 'AltGr+,', s: AltGr+<}
   - {t: AltGr+., s: AltGr+>}
+  - {t: AltGr+', s: AltGr+"}
   - {t: AltGr+/, s: 'AltGr+?'}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -144,7 +144,7 @@ layers:
   - {t: Ctl+9, s: Ctl+(}
   - {t: Ctl+0, s: Ctl+)}
   - Ctl+KP 1
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:keyboard-tab$$
   - Ctl+Q
   - Ctl+W
   - Ctl+E
@@ -169,7 +169,7 @@ layers:
   - Ctl+K
   - Ctl+L
   - {t: Ctl+;, s: 'Ctl+:'}
-  - {t: Ctl+', s: Ctl+"}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Z
   - Ctl+X
@@ -181,8 +181,8 @@ layers:
   - Ctl+M
   - {t: 'Ctl+,', s: Ctl+<}
   - {t: Ctl+., s: Ctl+>}
+  - {t: Ctl+', s: Ctl+"}
   - {t: Ctl+/, s: 'Ctl+?'}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -352,7 +352,7 @@ layers:
   - O
   - P
   - {t: '[', s: '{'}
-  - F1
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -364,8 +364,8 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
+  - F1
   - Z
   - X
   - C
@@ -376,14 +376,14 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
+  - {t: '''', s: '"'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', type: backspace}
   - Triangle
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '&key_repeat'
   - Square
   - $$mdi:apple-keyboard-command$$
