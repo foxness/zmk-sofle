@@ -382,11 +382,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - Triangle
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&key_repeat'
   - Square
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
@@ -416,7 +416,7 @@ layers:
   - RGB BRD
   - {t: Base, h: toggle}
   - {t: Gaming, h: toggle}
-  - Sft+Ctl+Gui+F20
+  - Sft+Gui+F20
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
