@@ -365,7 +365,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - $$mdi:apple-keyboard-shift$$
-  - F1
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -381,8 +381,8 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-command$$
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&key_repeat'
   - Square
