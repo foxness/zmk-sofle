@@ -414,9 +414,9 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - RGB BRI
   - RGB BRD
-  - {t: Base, h: toggle}
-  - {t: Gaming, h: toggle}
-  - Sft+Gui+F20
+  - '&switch_to_base'
+  - '&switch_to_gaming'
+  - KP 3
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -427,9 +427,9 @@ layers:
   - '&soft_off'
   - RGB HUI
   - RGB HUD
-  - KP 3
   - KP 4
   - KP 5
+  - KP 6
   - A
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -442,7 +442,7 @@ layers:
   - RGB SAD
   - RGB SPI
   - RGB SPD
-  - KP 6
+  - KP 7
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
