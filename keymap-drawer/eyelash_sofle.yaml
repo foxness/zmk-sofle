@@ -430,7 +430,7 @@ layers:
   - KP 3
   - KP 4
   - KP 5
-  - {t: '$$mdi:transfer$$', type: trans}
+  - A
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
