@@ -81,6 +81,20 @@
 
             label = "SHIFT_MCLK";
         };
+
+        switch_to_base: switch_to_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RG(RS(F19)) &to 0>;
+            label = "switch_to_base";
+        };
+
+        switch_to_gaming: switch_to_gaming {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RG(RS(F20)) &to 5>;
+            label = "switch_to_gaming";
+        };
     };
 
     keymap {
@@ -165,10 +179,10 @@
 
         system_layer {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_UP    &trans       &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &kp KP_NUMBER_2  &trans
-&trans  &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock  &trans        &sys_reset      &kp C_VOLUME_DOWN  &sys_reset   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &to 0            &to 5            &kp RS(RG(F20))
-&trans  &out OUT_USB  &out OUT_BLE    &trans          &trans        &soft_off       &trans             &soft_off    &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5
-&kp A   &trans        &trans          &trans          &trans        &bootloader     &trans             &bootloader  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &kp KP_NUMBER_6
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_UP    &trans       &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &kp KP_NUMBER_2    &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock  &trans        &sys_reset      &kp C_VOLUME_DOWN  &sys_reset   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &switch_to_base  &switch_to_gaming  &kp KP_NUMBER_3
+&trans  &out OUT_USB  &out OUT_BLE    &trans          &trans        &soft_off       &trans             &soft_off    &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6
+&kp A   &trans        &trans          &trans          &trans        &bootloader     &trans             &bootloader  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD    &kp KP_NUMBER_7
 &trans  &trans        &trans          &trans          &trans        &trans          &kp C_MUTE         &trans       &trans           &trans           &trans           &trans
             >;
 
