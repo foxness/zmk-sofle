@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '[', s: '{'}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -39,8 +39,8 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -51,8 +51,8 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: '''', s: '"'}
   - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: Arrow}
@@ -104,7 +104,7 @@ layers:
   - AltGr+K
   - AltGr+L
   - {t: AltGr+;, s: 'AltGr+:'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: AltGr+', s: AltGr+"}
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+Z
   - AltGr+X
@@ -116,8 +116,8 @@ layers:
   - AltGr+M
   - {t: 'AltGr+,', s: AltGr+<}
   - {t: AltGr+., s: AltGr+>}
-  - {t: AltGr+', s: AltGr+"}
   - {t: AltGr+/, s: 'AltGr+?'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -169,7 +169,7 @@ layers:
   - Ctl+K
   - Ctl+L
   - {t: Ctl+;, s: 'Ctl+:'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+', s: Ctl+"}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Z
   - Ctl+X
@@ -181,8 +181,8 @@ layers:
   - Ctl+M
   - {t: 'Ctl+,', s: Ctl+<}
   - {t: Ctl+., s: Ctl+>}
-  - {t: Ctl+', s: Ctl+"}
   - {t: Ctl+/, s: 'Ctl+?'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -352,7 +352,7 @@ layers:
   - O
   - P
   - {t: '[', s: '{'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - A
   - S
   - D
@@ -364,7 +364,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -376,8 +376,8 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: '''', s: '"'}
   - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
