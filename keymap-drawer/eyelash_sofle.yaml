@@ -56,8 +56,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: Arrow}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
-  - Triangle
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:keyboard-space$$', h: Triangle}
   - {t: '$$mdi:backspace$$', type: backspace}
   - AltGr+KP 0
   - Square
