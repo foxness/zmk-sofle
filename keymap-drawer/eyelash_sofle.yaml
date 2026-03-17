@@ -125,11 +125,11 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+Ctl+F13
+  - AltGr+Ctl+F14
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+Ctl+F16
+  - AltGr+Ctl+F17
   Square:
   - $$mdi:apple-keyboard-caps$$
   - {t: Ctl+1, s: Ctl+!}
