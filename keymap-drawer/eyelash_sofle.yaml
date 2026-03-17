@@ -261,10 +261,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Arrow:
-  - '0'
-  - HOME
-  - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - PgDn
+  - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -274,11 +274,11 @@ layers:
   - F19
   - F20
   - F21
+  - {t: '0', s: )}
   - {t: '`', s: '~'}
   - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Alt+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F10
@@ -287,12 +287,12 @@ layers:
   - F6
   - F13
   - F22
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - END
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F1
@@ -300,12 +300,12 @@ layers:
   - F3
   - F14
   - F23
-  - {t: '$$mdi:transfer$$', type: trans}
-  - PgUp
-  - PgDn
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - {t: \, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F12
   - F7
