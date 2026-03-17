@@ -154,11 +154,11 @@
 
         arrow_layer {
             bindings = <
-&kp NUMBER_0  &kp HOME            &kp END        &trans               &trans             &trans           &trans  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21
-&kp GRAVE     &kp LA(LEFT_ARROW)  &kp UP_ARROW   &kp LA(RIGHT_ARROW)  &trans             &trans           &trans  &kp F10  &kp F4   &kp F5   &kp F6   &kp F13  &kp F22
-&trans        &kp LEFT_ARROW      &kp DOWN       &kp RIGHT            &kp MINUS          &kp EQUAL        &trans  &kp F11  &kp F1   &kp F2   &kp F3   &kp F14  &kp F23
-&trans        &kp PAGE_UP         &kp PAGE_DOWN  &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &kp BACKSLASH    &trans  &kp F12  &kp F7   &kp F8   &kp F9   &kp F15  &kp F24
-&trans        &trans              &trans         &trans               &trans             &trans           &trans  &trans   &trans   &trans   &trans   &trans
+&kp ENTER         &kp BACKSPACE      &kp PAGE_DOWN  &kp PAGE_UP  &trans         &trans    &trans  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21
+&kp N0            &kp GRAVE          &kp LA(LEFT)   &kp UP       &kp LA(RIGHT)  &trans    &trans  &kp F10  &kp F4   &kp F5   &kp F6   &kp F13  &kp F22
+&kp HOME          &kp END            &kp LEFT       &kp DOWN     &kp RIGHT      &trans    &trans  &kp F11  &kp F1   &kp F2   &kp F3   &kp F14  &kp F23
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS      &kp EQUAL    &kp BACKSLASH  &trans    &trans  &kp F12  &kp F7   &kp F8   &kp F9   &kp F15  &kp F24
+&trans            &trans             &trans         &trans       &trans         &trans    &trans  &trans   &trans   &trans   &trans   &trans
             >;
 
             label = "Arrow";
