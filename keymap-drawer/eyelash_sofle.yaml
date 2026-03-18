@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '[', s: '{'}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
   - A
   - S
   - D
@@ -261,10 +261,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Arrow:
+  - '0'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - PgDn
-  - PgUp
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -274,8 +274,8 @@ layers:
   - F19
   - F20
   - F21
-  - {t: '0', s: )}
-  - {t: '`', s: '~'}
+  - {t: 'Gui+$$mdi:backspace$$', type: backspace}
+  - {t: \, s: '|'}
   - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Alt+$$mdi:arrow-right-bold$$
@@ -300,12 +300,12 @@ layers:
   - F3
   - F14
   - F23
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - PgUp
+  - PgDn
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: \, s: '|'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - F12
   - F7
