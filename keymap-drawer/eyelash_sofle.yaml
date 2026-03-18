@@ -57,11 +57,11 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - Arrow
   - $$mdi:apple-keyboard-command$$
-  - Triangle
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: Triangle}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - AltGr+KP 0
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-space$$
   - Square
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&key_repeat'

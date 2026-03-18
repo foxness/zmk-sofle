@@ -163,25 +163,25 @@ text.footer {
 }
 
 /* styling for combo tap, and key non-tap label text */
-text.combo, text.hold, text.shifted, text.left, text.right {
+text.combo, text.hold, text.shifted, text.left, text.right, text.tl, text.tr, text.bl, text.br {
     font-size: 11px;
 }
 
-text.hold {
+text.hold, text.bl, text.br {
     text-anchor: middle;
     dominant-baseline: auto;
 }
 
-text.shifted {
+text.shifted, text.tl, text.tr {
     text-anchor: middle;
     dominant-baseline: hanging;
 }
 
-text.left {
+text.left, text.tl, text.bl {
     text-anchor: start;
 }
 
-text.right {
+text.right, text.tr, text.br {
     text-anchor: end;
 }
 
@@ -378,7 +378,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">KP</tspan><tspan x="0" dy="1.2em">1</tspan>
+<tspan x="0" dy="-0.9em">KP</tspan><tspan x="0" dy="1.2em">1</tspan>
 </text>
 <a href="#System">
 <text x="0" y="24" class="key hold layer-activator">System</text>
@@ -617,13 +617,14 @@ rect.held, rect.combo.held {
 <g transform="translate(314, 283) rotate(30.0)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Triangle">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 75%">Triangle</tspan></text>
-</a></g>
-<g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
+<a href="#Triangle">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">Triangle</tspan></text>
+</a></g>
+<g transform="translate(389, 294) rotate(30.0)" class="key backspace keypos-57">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key backspace side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key backspace"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-9" y="-13" height="18" width="18.0" class="key backspace tap glyph mdi:backspace"/>
 </g>
 <g transform="translate(462, 91)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -637,10 +638,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-esc"/>
 </g>
-<g transform="translate(610, 283) rotate(-30.0)" class="key backspace keypos-60">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key backspace side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key backspace"/>
-<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-9" y="-13" height="18" width="18.0" class="key backspace tap glyph mdi:backspace"/>
+<g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
 </g>
 <g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -677,7 +678,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">1</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">1</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+!</tspan></text>
 </g>
@@ -685,7 +686,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">2</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">2</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+@</tspan></text>
 </g>
@@ -693,7 +694,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">3</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">3</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+#</tspan></text>
 </g>
@@ -701,7 +702,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">4</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">4</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+$</tspan></text>
 </g>
@@ -709,7 +710,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">5</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">5</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+%</tspan></text>
 </g>
@@ -722,7 +723,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">6</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">6</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+^</tspan></text>
 </g>
@@ -730,7 +731,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">7</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">7</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+&amp;</tspan></text>
 </g>
@@ -738,7 +739,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">8</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">8</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+*</tspan></text>
 </g>
@@ -746,7 +747,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">9</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">9</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+(</tspan></text>
 </g>
@@ -754,7 +755,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr+</tspan><tspan x="0" dy="1.2em">0</tspan>
+<tspan x="0" dy="-0.3em">AltGr+</tspan><tspan x="0" dy="1.2em">0</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+)</tspan></text>
 </g>
@@ -849,7 +850,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr</tspan><tspan x="0" dy="1.2em">+[</tspan>
+<tspan x="0" dy="-0.3em">AltGr</tspan><tspan x="0" dy="1.2em">+[</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+{</tspan></text>
 </g>
@@ -930,7 +931,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr</tspan><tspan x="0" dy="1.2em">+;</tspan>
+<tspan x="0" dy="-0.3em">AltGr</tspan><tspan x="0" dy="1.2em">+;</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+:</tspan></text>
 </g>
@@ -938,7 +939,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr</tspan><tspan x="0" dy="1.2em">+&#x27;</tspan>
+<tspan x="0" dy="-0.3em">AltGr</tspan><tspan x="0" dy="1.2em">+&#x27;</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+&quot;</tspan></text>
 </g>
@@ -1005,7 +1006,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr</tspan><tspan x="0" dy="1.2em">+,</tspan>
+<tspan x="0" dy="-0.3em">AltGr</tspan><tspan x="0" dy="1.2em">+,</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+&lt;</tspan></text>
 </g>
@@ -1013,7 +1014,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr</tspan><tspan x="0" dy="1.2em">+.</tspan>
+<tspan x="0" dy="-0.3em">AltGr</tspan><tspan x="0" dy="1.2em">+.</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+&gt;</tspan></text>
 </g>
@@ -1021,7 +1022,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.0em">AltGr</tspan><tspan x="0" dy="1.2em">+/</tspan>
+<tspan x="0" dy="-0.3em">AltGr</tspan><tspan x="0" dy="1.2em">+/</tspan>
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 86%">AltGr+?</tspan></text>
 </g>
@@ -2191,7 +2192,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">KP</tspan><tspan x="0" dy="1.2em">1</tspan>
+<tspan x="0" dy="-0.9em">KP</tspan><tspan x="0" dy="1.2em">1</tspan>
 </text>
 <a href="#System">
 <text x="0" y="24" class="key hold layer-activator">System</text>
