@@ -126,10 +126,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Circle
-  - AltGr+Ctl+F14
-  - AltGr+Ctl+F15
-  - AltGr+Ctl+F16
-  - AltGr+Ctl+F17
+  - AltGr+Gui+F14
+  - AltGr+Gui+F15
+  - AltGr+Gui+F16
+  - AltGr+Gui+F17
   Square:
   - $$mdi:apple-keyboard-caps$$
   - {t: Ctl+1, s: Ctl+!}
@@ -382,8 +382,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - Triangle
   - $$mdi:keyboard-space$$
+  - Triangle
   - AltGr+KP 0
   - F1
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -402,7 +402,7 @@ layers:
   - RGB EFF
   - RGB EFR
   - RGB TOG
-  - KP 2
+  - Ctl+F13
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
@@ -416,7 +416,7 @@ layers:
   - RGB BRD
   - '&switch_to_base'
   - '&switch_to_gaming'
-  - KP 3
+  - KP 2
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -427,10 +427,10 @@ layers:
   - '&soft_off'
   - RGB HUI
   - RGB HUD
+  - KP 3
   - KP 4
   - KP 5
-  - KP 6
-  - A
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -442,7 +442,7 @@ layers:
   - RGB SAD
   - RGB SPI
   - RGB SPD
-  - KP 7
+  - KP 6
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
