@@ -125,10 +125,10 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Circle
+  - AltGr+Gui+F13
   - AltGr+Gui+F14
   - AltGr+Gui+F15
-  - AltGr+Gui+F16
+  - Circle
   - AltGr+Gui+F17
   Square:
   - $$mdi:apple-keyboard-caps$$
@@ -255,10 +255,10 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Arrow:
   - '0'
