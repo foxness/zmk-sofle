@@ -141,7 +141,7 @@
 
         circle_layer {
             bindings = <
-&trans      &kp F1  &kp F2     &kp F3     &kp F4     &kp F5    &mmv MOVE_UP     &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21
+&trans      &none   &none      &none      &none      &none     &mmv MOVE_UP     &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21
 &trans      &none   &none      &mkp MB4   &mkp MB5   &none     &mmv MOVE_DOWN   &kp F14  &kp F4   &kp F5   &kp F6   &kp F11  &kp F22
 &trans      &none   &mkp MCLK  &mkp RCLK  &mkp LCLK  &none     &mmv MOVE_LEFT   &kp F13  &kp F1   &kp F2   &kp F3   &kp F10  &kp F23
 &trans      &trans  &trans     &trans     &trans     &trans    &mmv MOVE_RIGHT  &kp F15  &kp F7   &kp F8   &kp F9   &kp F12  &kp F24
