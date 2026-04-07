@@ -95,6 +95,13 @@
             bindings = <&kp RG(RS(F20)) &to 5>;
             label = "switch_to_gaming";
         };
+
+        double_zero: double_zero {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_0 &kp NUMBER_0>;
+            label = "DOUBLE_ZERO";
+        };
     };
 
     keymap {
@@ -158,7 +165,7 @@
 &kp LA(LEFT)    &kp UP             &kp LA(RIGHT)  &kp PAGE_UP    &kp BACKSLASH     &trans               &trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
 &kp LEFT        &kp DOWN           &kp RIGHT      &kp PAGE_DOWN  &kp MINUS         &kp EQUAL            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
 &kp LEFT_SHIFT  &kp LEFT_CONTROL   &kp HOME       &kp END        &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-&trans          &trans             &trans         &trans         &trans            &trans               &trans  &trans  &trans        &kp NUMBER_0  &trans        &trans
+&trans          &trans             &trans         &trans         &trans            &trans               &trans  &trans  &kp NUMBER_0  &double_zero  &trans        &trans
             >;
 
             label = "Arrow";
