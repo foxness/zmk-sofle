@@ -409,9 +409,9 @@ layers:
   - BT CLR ALL
   - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB BRI
   - RGB BRD
   - KP 2
@@ -422,9 +422,9 @@ layers:
   - OUT BLE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&soft_off'
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&soft_off'
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - RGB HUI
   - RGB HUD
   - KP 4
@@ -454,7 +454,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&soft_off'
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
