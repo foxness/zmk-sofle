@@ -397,12 +397,12 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - $$mdi:volume-high$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - RGB TOG
   - RGB EFF
   - RGB EFR
-  - RGB TOG
-  - Ctl+F13
+  - '&switch_to_gaming'
+  - '&switch_to_base'
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
@@ -410,13 +410,13 @@ layers:
   - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - $$mdi:volume-low$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - RGB BRI
   - RGB BRD
-  - '&switch_to_base'
-  - '&switch_to_gaming'
   - KP 2
+  - Ctl+F13
+  - KP 3
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -427,9 +427,9 @@ layers:
   - '&soft_off'
   - RGB HUI
   - RGB HUD
-  - KP 3
   - KP 4
   - KP 5
+  - KP 6
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -442,14 +442,14 @@ layers:
   - RGB SAD
   - RGB SPI
   - RGB SPD
-  - KP 6
+  - KP 7
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
