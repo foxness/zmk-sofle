@@ -60,9 +60,9 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Triangle}
   - {t: '$$mdi:backspace$$', type: backspace}
   - AltGr+KP 0
-  - $$mdi:keyboard-esc$$
+  - '&key_repeat'
   - $$mdi:keyboard-space$$
-  - Square
+  - {t: '$$mdi:keyboard-esc$$', h: Square}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Circle
   Triangle:
@@ -92,7 +92,7 @@ layers:
   - AltGr+O
   - AltGr+P
   - {t: 'AltGr+[', s: 'AltGr+{'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
   - AltGr+A
   - AltGr+S
   - AltGr+D
@@ -105,7 +105,7 @@ layers:
   - AltGr+L
   - {t: AltGr+;, s: 'AltGr+:'}
   - {t: AltGr+', s: AltGr+"}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'AltGr+$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - AltGr+Z
   - AltGr+X
   - AltGr+C
@@ -236,11 +236,11 @@ layers:
   - F10
   - F23
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:pan-left$$
+  - $$mdi:pan-down$$
+  - $$mdi:pan-up$$
+  - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - F15
   - F7
