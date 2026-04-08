@@ -148,11 +148,11 @@
 
         circle_layer {
             bindings = <
-&trans  &none   &none           &none           &none            &none       &trans  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21
-&trans  &none   &mkp MCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4    &trans  &kp F14  &kp F4   &kp F5   &kp F6   &kp F11  &kp F22
-&trans  &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5    &trans  &kp F13  &kp F1   &kp F2   &kp F3   &kp F10  &kp F23
-&trans  &trans  &trans          &trans          &trans           &trans      &trans  &kp F15  &kp F7   &kp F8   &kp F9   &kp F12  &kp F24
-&trans  &trans  &trans          &trans          &mkp LCLK        &trans      &trans  &trans   &trans   &trans   &trans   &trans
+&trans  &none   &none           &none           &none            &none              &trans  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21
+&trans  &none   &mkp MCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4           &trans  &kp F14  &kp F4   &kp F5   &kp F6   &kp F11  &kp F22
+&trans  &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &trans  &kp F13  &kp F1   &kp F2   &kp F3   &kp F10  &kp F23
+&trans  &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT    &trans  &kp F15  &kp F7   &kp F8   &kp F9   &kp F12  &kp F24
+&trans  &trans  &trans          &trans          &mkp LCLK        &trans             &trans  &trans   &trans   &trans   &trans   &trans
             >;
 
             display-name = "Circle";
