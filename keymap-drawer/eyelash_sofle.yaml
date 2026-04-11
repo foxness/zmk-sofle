@@ -99,8 +99,8 @@ layers:
   - AltGr+F
   - AltGr+G
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+H
-  - AltGr+J
+  - '&double_zero'
+  - '0'
   - AltGr+K
   - AltGr+L
   - {t: AltGr+;, s: 'AltGr+:'}
