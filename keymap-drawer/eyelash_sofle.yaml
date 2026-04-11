@@ -56,8 +56,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - Arrow
-  - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-space$$', h: Triangle}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: KP DOT, h: Triangle}
   - {t: '$$mdi:backspace$$', type: backspace}
   - AltGr+KP 0
   - '&key_repeat'
