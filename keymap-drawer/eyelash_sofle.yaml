@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - AltGr+KP 1
+  - Sft+KP 1
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - AltGr+KP 3
+  - Sft+KP 3
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - G
-  - AltGr+KP 4
+  - Sft+KP 4
   - H
   - J
   - K
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - AltGr+KP 2
+  - Sft+KP 2
   - N
   - M
   - {t: ',', s: <}
@@ -59,7 +59,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: KP DOT, h: Triangle}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - AltGr+KP 0
+  - Sft+KP 0
   - '&key_repeat'
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-esc$$', h: Square}
@@ -87,9 +87,9 @@ layers:
   - AltGr+T
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+Y
-  - AltGr+U
-  - AltGr+I
-  - AltGr+O
+  - '4'
+  - '5'
+  - '6'
   - AltGr+P
   - {t: 'AltGr+[', s: 'AltGr+{'}
   - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
@@ -101,9 +101,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&double_zero'
   - '0'
-  - AltGr+K
-  - AltGr+L
-  - {t: AltGr+;, s: 'AltGr+:'}
+  - '1'
+  - '2'
+  - '3'
   - {t: AltGr+', s: AltGr+"}
   - {t: 'AltGr+$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - AltGr+Z
@@ -113,9 +113,9 @@ layers:
   - AltGr+B
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+N
-  - AltGr+M
-  - {t: 'AltGr+,', s: AltGr+<}
-  - {t: AltGr+., s: AltGr+>}
+  - '7'
+  - '8'
+  - '9'
   - {t: AltGr+/, s: 'AltGr+?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -125,11 +125,11 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+Gui+F13
-  - AltGr+Gui+F14
-  - AltGr+Gui+F15
-  - AltGr+Gui+F16
-  - AltGr+Gui+F17
+  - AltGr+KP 1
+  - AltGr+KP 2
+  - AltGr+KP 3
+  - AltGr+KP 4
+  - AltGr+KP 5
   Square:
   - $$mdi:apple-keyboard-caps$$
   - {t: Ctl+1, s: Ctl+!}
