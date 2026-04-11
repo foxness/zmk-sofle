@@ -123,11 +123,11 @@
         triangle_layer {
             display-name = "Triangle";
             bindings = <
-&kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)       &kp RA(N7)       &kp RA(N8)       &kp RA(N9)       &kp RA(N0)       &kp RA(F13)
-&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp RA(Y)        &kp RA(U)        &kp RA(I)        &kp RA(O)        &kp RA(P)        &kp RA(LEFT_BRACKET)
-&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &double_zero     &kp NUMBER_0     &kp RA(K)        &kp RA(L)        &kp RA(SEMI)     &kp RA(APOS)
-&mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp RA(N)        &kp RA(M)        &kp RA(COMMA)    &kp RA(DOT)      &kp RA(FSLH)     &trans
-&trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(RG(F13))  &kp RA(RG(F14))  &kp RA(RG(F15))  &kp RA(RG(F16))  &kp RA(RG(F17))
+&kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)           &kp RA(N7)           &kp RA(N8)           &kp RA(N9)           &kp RA(N0)           &kp RA(F13)
+&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp RA(Y)            &kp NUMBER_4         &kp NUMBER_5         &kp NUMBER_6         &kp RA(P)            &kp RA(LEFT_BRACKET)
+&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &double_zero         &kp NUMBER_0         &kp NUMBER_1         &kp NUMBER_2         &kp NUMBER_3         &kp RA(APOS)
+&mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp RA(N)            &kp NUMBER_7         &kp NUMBER_8         &kp NUMBER_9         &kp RA(FSLH)         &trans
+&trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &kp RA(KP_NUMBER_5)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
