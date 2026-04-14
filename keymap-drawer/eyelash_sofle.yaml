@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '[', s: '{'}
-  - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -56,14 +56,14 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - Arrow
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: KP DOT, h: Triangle}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - Sft+KP 0
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:keyboard-space$$
+  - Triangle
+  - Sft+KP 0
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - KP DOT
   - {t: '$$mdi:keyboard-esc$$', h: Square}
-  - '&key_repeat'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - Circle
   Triangle:
   - AltGr+$$mdi:keyboard-esc$$
@@ -122,8 +122,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+KP 1
   - AltGr+KP 2
@@ -262,7 +262,7 @@ layers:
   - {type: held}
   Arrow:
   - '0'
-  - {t: 'Gui+$$mdi:backspace$$', type: backspace}
+  - {t: '`', s: '~'}
   - Gui+$$mdi:arrow-left-bold$$
   - Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -385,10 +385,10 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - KP DOT
   - Square
-  - F1
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
   System:
   - {t: '$$mdi:transfer$$', type: trans}
