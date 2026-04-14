@@ -57,8 +57,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - Arrow
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:keyboard-space$$
   - Triangle
+  - $$mdi:keyboard-space$$
   - Sft+KP 0
   - {t: '$$mdi:backspace$$', type: backspace}
   - KP DOT
@@ -122,8 +122,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+KP 1
   - AltGr+KP 2
