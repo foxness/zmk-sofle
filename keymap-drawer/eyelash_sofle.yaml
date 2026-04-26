@@ -90,7 +90,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - AltGr+P
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: 'AltGr+[', s: 'AltGr+{'}
   - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
   - AltGr+A
@@ -112,7 +112,7 @@ layers:
   - AltGr+V
   - AltGr+B
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+N
+  - KP DOT
   - '7'
   - '8'
   - '9'
