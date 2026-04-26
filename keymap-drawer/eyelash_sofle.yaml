@@ -60,7 +60,7 @@ layers:
   - Triangle
   - $$mdi:keyboard-space$$
   - Sft+KP 0
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-esc$$', h: Square}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -385,7 +385,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', h: Triangle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - Square
   - {t: '$$mdi:keyboard-return$$', type: enter}
