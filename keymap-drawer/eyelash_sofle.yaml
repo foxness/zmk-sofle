@@ -86,11 +86,11 @@ layers:
   - AltGr+R
   - AltGr+T
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+Y
+  - KP DOT
   - '4'
   - '5'
   - '6'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - KP DOT
   - {t: 'AltGr+[', s: 'AltGr+{'}
   - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
   - AltGr+A
@@ -112,7 +112,7 @@ layers:
   - AltGr+V
   - AltGr+B
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP DOT
+  - '0'
   - '7'
   - '8'
   - '9'
