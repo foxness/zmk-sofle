@@ -291,8 +291,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - PgDn
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - HOME
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - F14
   - F1
@@ -302,8 +302,8 @@ layers:
   - F23
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
-  - HOME
-  - END
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
