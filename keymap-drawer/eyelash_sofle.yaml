@@ -157,7 +157,7 @@ layers:
   - Ctl+O
   - Ctl+P
   - {t: 'Ctl+[', s: 'Ctl+{'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - Ctl+A
   - Ctl+S
   - Ctl+D
