@@ -86,11 +86,11 @@ layers:
   - AltGr+R
   - AltGr+T
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP DOT
+  - KP PLUS
   - '4'
   - '5'
   - '6'
-  - KP DOT
+  - KP ASTERISK
   - {t: 'AltGr+[', s: 'AltGr+{'}
   - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
   - AltGr+A
@@ -99,7 +99,7 @@ layers:
   - AltGr+F
   - AltGr+G
   - {t: '$$mdi:transfer$$', type: trans}
-  - '0'
+  - KP DOT
   - '0'
   - '1'
   - '2'
@@ -112,11 +112,11 @@ layers:
   - AltGr+V
   - AltGr+B
   - {t: '$$mdi:transfer$$', type: trans}
-  - '0'
+  - KP MINUS
   - '7'
   - '8'
   - '9'
-  - {t: AltGr+/, s: 'AltGr+?'}
+  - KP SLASH
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
