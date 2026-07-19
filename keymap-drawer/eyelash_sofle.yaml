@@ -60,10 +60,10 @@ layers:
   - Triangle
   - $$mdi:keyboard-space$$
   - Sft+KP 0
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - Square
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-esc$$
   - Circle
   Triangle:
   - AltGr+$$mdi:keyboard-esc$$
@@ -388,7 +388,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - Square
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-option$$
   gaming_triangle:
   - {t: '$$mdi:transfer$$', type: trans}
