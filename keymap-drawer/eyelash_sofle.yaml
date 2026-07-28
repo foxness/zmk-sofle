@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: KP 1, h: System}
+  - System
   - {t: '$$mdi:keyboard-tab$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
   - Q
   - W
@@ -62,9 +62,9 @@ layers:
   - Sft+KP 0
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - Square
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: Square}
   - Circle
+  - KP 1
   Triangle:
   - AltGr+$$mdi:keyboard-esc$$
   - {t: AltGr+1, s: AltGr+!}
@@ -258,8 +258,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   Arrow:
   - '0'
   - {t: '`', s: '~'}
@@ -338,7 +338,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: KP 1, h: System}
+  - System
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -389,7 +389,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - Square
   - $$mdi:keyboard-esc$$
-  - $$mdi:apple-keyboard-option$$
+  - KP 1
   gaming_triangle:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
