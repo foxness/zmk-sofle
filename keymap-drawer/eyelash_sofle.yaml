@@ -62,7 +62,7 @@ layers:
   - Sft+KP 0
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-esc$$', h: Square}
+  - Square
   - Circle
   - KP 1
   Triangle:
@@ -86,11 +86,11 @@ layers:
   - AltGr+R
   - AltGr+T
   - {t: '$$mdi:transfer$$', type: trans}
-  - PgDn
+  - {t: 'Gui+$$mdi:backspace$$', type: backspace}
   - Alt+$$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
-  - Alt+$$mdi:arrow-right-bold$$
+  - PgDn
   - PgUp
+  - Alt+$$mdi:arrow-right-bold$$
   - {t: 'AltGr+[', s: 'AltGr+{'}
   - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
   - AltGr+A
@@ -99,11 +99,11 @@ layers:
   - AltGr+F
   - AltGr+G
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
+  - {t: 'Alt+$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-left-bold$$
-  - $$mdi:keyboard-esc$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - END
   - {t: AltGr+', s: AltGr+"}
   - {t: 'AltGr+$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - AltGr+Z
@@ -114,9 +114,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+N
   - Gui+$$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
+  - HOME
+  - END
   - Gui+$$mdi:arrow-right-bold$$
-  - {t: AltGr+/, s: 'AltGr+?'}
   - AltGr+KP 6
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
