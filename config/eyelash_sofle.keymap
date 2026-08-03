@@ -123,10 +123,10 @@
         triangle_layer {
             display-name = "Triangle";
             bindings = <
-&kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)           &kp RA(N7)           &kp RA(N8)           &kp RA(N9)           &kp RA(N0)           &kp RA(F13)
-&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp KP_PLUS          &kp NUMBER_4         &kp NUMBER_5         &kp NUMBER_6         &kp KP_ASTERISK      &kp RA(LEFT_BRACKET)
-&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp KP_DOT           &kp NUMBER_0         &kp NUMBER_1         &kp NUMBER_2         &kp NUMBER_3         &kp RA(APOS)
-&mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp KP_MINUS         &kp NUMBER_7         &kp NUMBER_8         &kp NUMBER_9         &kp KP_SLASH         &trans
+&kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)           &kp RA(N7)           &kp RA(N8)           &kp RA(N9)           &kp RA(N0)           &kp RA(KP_NUMBER_7)
+&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp PAGE_DOWN        &kp LA(LEFT)         &kp UP               &kp LA(RIGHT)        &kp PAGE_UP          &kp RA(LEFT_BRACKET)
+&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp HOME             &kp LEFT             &kp ESCAPE           &kp RIGHT            &kp END              &kp RA(APOS)
+&mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp RA(N)            &kp LG(LEFT)         &kp DOWN             &kp LG(RIGHT)        &kp RA(SLASH)        &kp RA(KP_NUMBER_6)
 &trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &kp RA(KP_NUMBER_5)
             >;
 
