@@ -86,11 +86,11 @@ layers:
   - AltGr+R
   - AltGr+T
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Gui+$$mdi:backspace$$', type: backspace}
   - Alt+$$mdi:arrow-left-bold$$
   - PgDn
   - PgUp
   - Alt+$$mdi:arrow-right-bold$$
+  - {t: 'Gui+$$mdi:backspace$$', type: backspace}
   - {t: 'AltGr+[', s: 'AltGr+{'}
   - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
   - AltGr+A
@@ -112,11 +112,11 @@ layers:
   - AltGr+V
   - AltGr+B
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+N
   - Gui+$$mdi:arrow-left-bold$$
   - HOME
   - END
   - Gui+$$mdi:arrow-right-bold$$
+  - {t: AltGr+/, s: 'AltGr+?'}
   - AltGr+KP 6
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
