@@ -262,9 +262,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Arrow:
   - '0'
-  - {t: '`', s: '~'}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - '6'
+  - '7'
+  - '8'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -274,12 +274,12 @@ layers:
   - F19
   - F20
   - F21
-  - {t: Gui+=, s: Gui++}
+  - '9'
   - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Alt+$$mdi:arrow-right-bold$$
   - HOME
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - F15
   - F4
@@ -287,12 +287,12 @@ layers:
   - F6
   - F10
   - F22
-  - {t: Gui+-, s: Gui+_}
+  - {t: '`', s: '~'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
   - F14
   - F1
@@ -300,11 +300,11 @@ layers:
   - F3
   - F11
   - F23
-  - {t: Gui+0, s: Gui+)}
+  - {t: Gui+-, s: Gui+_}
+  - {t: Gui+=, s: Gui++}
+  - Gui+0
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - PgDn
-  - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F13
