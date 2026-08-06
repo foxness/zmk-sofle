@@ -14,29 +14,9 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
-};
-
-&mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
-};
-
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-        tap-ms = <100>;
-    };
-
     mtL1: mtL1 {
         compatible = "zmk,behavior-tap-dance";
         label = "MT L1";
@@ -108,7 +88,6 @@
 &none                       &kp LEFT_ALT  &mo 4   &kp LEFT_COMMAND  &mo 1   &kp SPACE    &kp RS(KP_NUMBER_0)  &kp ENTER  &kp BACKSPACE  &mo 2      &mo 3    &kp KP_NUMBER_1
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "Base";
         };
 
@@ -121,8 +100,6 @@
 &mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp LG(LEFT)         &kp HOME             &kp END              &kp LG(RIGHT)        &kp RA(SLASH)        &kp RA(KP_NUMBER_6)
 &trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &kp RA(KP_NUMBER_5)
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         square_layer {
@@ -134,21 +111,18 @@
 &trans         &kp RC(Z)   &kp RC(X)   &kp RC(C)   &kp RC(V)            &kp RC(B)     &trans  &kp RC(N)   &kp RC(M)   &kp RC(COMMA)  &kp RC(DOT)  &kp RC(FSLH)  &trans
 &trans         &trans      &trans      &trans      &kp RC(KP_NUMBER_2)  &trans        &trans  &trans      &trans      &trans         &trans       &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         circle_layer {
             bindings = <
-&trans  &none   &none           &none           &none            &none              &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &mkp MCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &mkp LCLK        &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &none   &none   &none   &none     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &trans  &kp A   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "Circle";
-            sensor-bindings = <&scroll_encoder>;
         };
 
         arrow_layer {
@@ -172,8 +146,6 @@
 &kp LEFT_SHIFT    &kp Z      &kp X         &kp C         &kp V      &kp B     &trans  &kp N      &kp M          &kp COMMA  &kp DOT     &kp FSLH         &kp RIGHT_SHIFT
 &trans            &kp ENTER  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo 6     &trans  &kp ENTER  &kp BACKSPACE  &mo 2      &kp ESCAPE  &kp KP_NUMBER_1
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         gaming_triangle {
@@ -188,15 +160,14 @@
 
         system_layer {
             bindings = <
-&trans      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &switch_to_gaming  &switch_to_base  &trans
-&trans      &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock  &trans        &none           &trans  &none            &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp KP_NUMBER_2    &kp RC(F13)      &kp KP_NUMBER_3
-&trans      &out OUT_USB  &out OUT_BLE    &trans          &trans        &sys_reset      &trans  &sys_reset       &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans      &trans        &trans          &trans          &trans        &bootloader     &trans  &bootloader      &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_SPI    &rgb_ug RGB_SPD  &kp KP_NUMBER_7
-&kp C_MUTE  &trans        &trans          &trans          &trans        &trans          &trans  &trans           &trans           &trans           &trans             &soft_off
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &switch_to_gaming  &switch_to_base  &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock  &trans        &none           &trans  &none            &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp KP_NUMBER_2    &kp RC(F13)      &kp KP_NUMBER_3
+&trans  &out OUT_USB  &out OUT_BLE    &trans          &trans        &sys_reset      &trans  &sys_reset       &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans  &trans        &trans          &trans          &trans        &bootloader     &trans  &bootloader      &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_SPI    &rgb_ug RGB_SPD  &kp KP_NUMBER_7
+&trans  &trans        &trans          &trans          &trans        &trans          &trans  &trans           &trans           &trans           &trans             &soft_off
             >;
 
             display-name = "System";
-            sensor-bindings = <&scroll_encoder>;
         };
     };
 
