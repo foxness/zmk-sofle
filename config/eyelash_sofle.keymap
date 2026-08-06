@@ -172,11 +172,11 @@
 
         system_layer {
             bindings = <
-&trans      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &switch_to_gaming  &switch_to_base  &trans
-&trans      &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock  &trans        &none           &trans  &none            &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp KP_NUMBER_2    &kp RC(F13)      &kp KP_NUMBER_3
-&trans      &out OUT_USB  &out OUT_BLE    &trans          &trans        &sys_reset      &trans  &sys_reset       &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans      &trans        &trans          &trans          &trans        &bootloader     &trans  &bootloader      &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_SPI    &rgb_ug RGB_SPD  &kp KP_NUMBER_7
-&kp C_MUTE  &trans        &trans          &trans          &trans        &trans          &trans  &trans           &trans           &trans           &trans             &soft_off
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &switch_to_gaming  &switch_to_base  &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock  &trans        &none           &trans  &none            &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp KP_NUMBER_2    &kp RC(F13)      &kp KP_NUMBER_3
+&trans  &out OUT_USB  &out OUT_BLE    &trans          &trans        &sys_reset      &trans  &sys_reset       &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans  &trans        &trans          &trans          &trans        &bootloader     &trans  &bootloader      &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_SPI    &rgb_ug RGB_SPD  &kp KP_NUMBER_7
+&trans  &trans        &trans          &trans          &trans        &trans          &trans  &trans           &trans           &trans           &trans             &soft_off
             >;
 
             display-name = "System";
