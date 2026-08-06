@@ -508,7 +508,7 @@ layers:
   - RGB SPI
   - RGB SPD
   - KP 7
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
