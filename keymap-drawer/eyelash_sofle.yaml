@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - Square
-  - Circle
+  - Mouse
   - KP 1
   Triangle:
   - AltGr+$$mdi:keyboard-esc$$
@@ -126,7 +126,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+KP 1
-  - AltGr+KP 2
+  - Circle
   - AltGr+KP 3
   - AltGr+KP 4
   - AltGr+KP 5
@@ -196,6 +196,71 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Circle:
+  - Ctl+AltGr+$$mdi:keyboard-esc$$
+  - {t: Ctl+AltGr+1, s: Ctl+AltGr+!}
+  - {t: Ctl+AltGr+2, s: Ctl+AltGr+@}
+  - {t: Ctl+AltGr+3, s: Ctl+AltGr+#}
+  - {t: Ctl+AltGr+4, s: Ctl+AltGr+$}
+  - {t: Ctl+AltGr+5, s: Ctl+AltGr+%}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+AltGr+6, s: Ctl+AltGr+^}
+  - {t: Ctl+AltGr+7, s: Ctl+AltGr+&}
+  - {t: Ctl+AltGr+8, s: Ctl+AltGr+*}
+  - {t: Ctl+AltGr+9, s: Ctl+AltGr+(}
+  - {t: Ctl+AltGr+0, s: Ctl+AltGr+)}
+  - Ctl+AltGr+KP 1
+  - Ctl+$$mdi:keyboard-tab$$
+  - Ctl+AltGr+Q
+  - Ctl+AltGr+W
+  - Ctl+AltGr+E
+  - Ctl+AltGr+R
+  - Ctl+AltGr+T
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+AltGr+Y
+  - Ctl+AltGr+U
+  - Ctl+AltGr+I
+  - Ctl+AltGr+O
+  - Ctl+AltGr+P
+  - {t: 'Ctl+AltGr+[', s: 'Ctl+AltGr+{'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+AltGr+A
+  - Ctl+AltGr+S
+  - Ctl+AltGr+D
+  - Ctl+AltGr+F
+  - Ctl+AltGr+G
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+AltGr+H
+  - Ctl+AltGr+J
+  - Ctl+AltGr+K
+  - Ctl+AltGr+L
+  - {t: Ctl+AltGr+;, s: 'Ctl+AltGr+:'}
+  - {t: Ctl+AltGr+', s: Ctl+AltGr+"}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+AltGr+Z
+  - Ctl+AltGr+X
+  - Ctl+AltGr+C
+  - Ctl+AltGr+V
+  - Ctl+AltGr+B
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+AltGr+N
+  - Ctl+AltGr+M
+  - {t: 'Ctl+AltGr+,', s: Ctl+AltGr+<}
+  - {t: Ctl+AltGr+., s: Ctl+AltGr+>}
+  - {t: Ctl+AltGr+/, s: 'Ctl+AltGr+?'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  Mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
