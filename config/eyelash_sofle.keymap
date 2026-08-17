@@ -41,7 +41,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "MT L1";
         #binding-cells = <0>;
-        bindings = <&mo 3>, <&to 3>;
+        bindings = <&mo 4>, <&to 4>;
     };
 
     hl: hl {
@@ -84,7 +84,7 @@
         switch_to_gaming: switch_to_gaming {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RG(RS(F20)) &to 5>;
+            bindings = <&kp RG(RS(F20)) &to 6>;
             label = "switch_to_gaming";
         };
 
@@ -101,11 +101,11 @@
 
         base_layer {
             bindings = <
-&mt RA(RIGHT_SHIFT) ESCAPE  &kp N1        &kp N2  &kp N3            &kp N4  &kp N5       &kp RS(KP_NUMBER_1)  &kp N6     &kp N7         &kp N8     &kp N9   &kp N0           &mo 7
+&mt RA(RIGHT_SHIFT) ESCAPE  &kp N1        &kp N2  &kp N3            &kp N4  &kp N5       &kp RS(KP_NUMBER_1)  &kp N6     &kp N7         &kp N8     &kp N9   &kp N0           &mo 8
 &mt RC(RIGHT_SHIFT) TAB     &kp Q         &kp W   &kp E             &kp R   &kp T        &kp RS(KP_NUMBER_3)  &kp Y      &kp U          &kp I      &kp O    &kp P            &kp LEFT_BRACKET
 &mt LEFT_CONTROL BACKSPACE  &kp A         &kp S   &kp D             &kp F   &kp G        &kp RS(KP_NUMBER_4)  &kp H      &kp J          &kp K      &kp L    &kp SEMI         &kp APOS
 &mt LEFT_SHIFT ENTER        &kp Z         &kp X   &kp C             &kp V   &kp B        &kp RS(KP_NUMBER_2)  &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH         &kp RIGHT_SHIFT
-&none                       &kp LEFT_ALT  &mo 4   &kp LEFT_COMMAND  &mo 1   &kp SPACE    &kp RS(KP_NUMBER_0)  &kp ENTER  &kp BACKSPACE  &mo 2      &mo 3    &kp KP_NUMBER_1
+&none                       &kp LEFT_ALT  &mo 5   &kp LEFT_COMMAND  &mo 1   &kp SPACE    &kp RS(KP_NUMBER_0)  &kp ENTER  &kp BACKSPACE  &mo 2      &mo 4    &kp KP_NUMBER_1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -115,11 +115,11 @@
         triangle_layer {
             display-name = "Triangle";
             bindings = <
-&kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)           &kp RA(N7)           &kp RA(N8)           &kp RA(N9)           &kp RA(N0)           &kp RA(KP_NUMBER_7)
-&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp LA(LEFT)         &kp PAGE_DOWN        &kp PAGE_UP          &kp LA(RIGHT)        &kp RA(P)            &kp RA(LEFT_BRACKET)
-&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp LA(BACKSPACE)    &kp LEFT             &kp DOWN             &kp UP               &kp RIGHT            &kp RA(APOS)
-&mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp MINUS            &kp HOME             &kp END              &kp EQUAL            &kp RA(SLASH)        &kp RA(KP_NUMBER_6)
-&trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &kp RA(KP_NUMBER_5)
+&kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)           &kp RA(N7)     &kp RA(N8)           &kp RA(N9)           &kp RA(N0)           &kp RA(KP_NUMBER_7)
+&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp LA(LEFT)         &kp PAGE_DOWN  &kp PAGE_UP          &kp LA(RIGHT)        &kp RA(P)            &kp RA(LEFT_BRACKET)
+&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp LA(BACKSPACE)    &kp LEFT       &kp DOWN             &kp UP               &kp RIGHT            &kp RA(APOS)
+&mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp MINUS            &kp HOME       &kp END              &kp EQUAL            &kp RA(SLASH)        &kp RA(KP_NUMBER_6)
+&trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &mo 3          &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &kp RA(KP_NUMBER_5)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -139,6 +139,19 @@
         };
 
         circle_layer {
+            display-name = "Circle";
+            bindings = <
+&kp RC(RA(ESCAPE))  &kp RC(RA(N1))  &kp RC(RA(N2))  &kp RC(RA(N3))  &kp RC(RA(N4))  &kp RC(RA(N5))    &trans  &kp RC(RA(N6))  &kp RC(RA(N7))  &kp RC(RA(N8))     &kp RC(RA(N9))   &kp RC(RA(N0))    &kp RC(RA(KP_NUMBER_1))
+&kp RC(TAB)         &kp RC(RA(Q))   &kp RC(RA(W))   &kp RC(RA(E))   &kp RC(RA(R))   &kp RC(RA(T))     &trans  &kp RC(RA(Y))   &kp RC(RA(U))   &kp RC(RA(I))      &kp RC(RA(O))    &kp RC(RA(P))     &kp RC(RA(LEFT_BRACKET))
+&trans              &kp RC(RA(A))   &kp RC(RA(S))   &kp RC(RA(D))   &kp RC(RA(F))   &kp RC(RA(G))     &trans  &kp RC(RA(H))   &kp RC(RA(J))   &kp RC(RA(K))      &kp RC(RA(L))    &kp RC(RA(SEMI))  &kp RC(RA(APOS))
+&trans              &kp RC(RA(Z))   &kp RC(RA(X))   &kp RC(RA(C))   &kp RC(RA(V))   &kp RC(RA(B))     &trans  &kp RC(RA(N))   &kp RC(RA(M))   &kp RC(RA(COMMA))  &kp RC(RA(DOT))  &kp RC(RA(FSLH))  &trans
+&trans              &trans          &trans          &trans          &trans          &trans            &trans  &trans          &trans          &trans             &trans           &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        mouse_layer {
             bindings = <
 &trans  &none   &none           &none           &none            &none              &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &none   &mkp MCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4           &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -147,7 +160,7 @@
 &trans  &trans  &trans          &trans          &mkp LCLK        &trans             &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            display-name = "Circle";
+            display-name = "Mouse";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -166,11 +179,11 @@
         gaming_layer {
             display-name = "Gaming";
             bindings = <
-&kp ESCAPE        &kp N1     &kp N2        &kp N3        &kp N4     &kp N5    &trans  &kp N6     &kp N7         &kp N8     &kp N9      &kp N0           &mo 7
+&kp ESCAPE        &kp N1     &kp N2        &kp N3        &kp N4     &kp N5    &trans  &kp N6     &kp N7         &kp N8     &kp N9      &kp N0           &mo 8
 &kp TAB           &kp Q      &kp W         &kp E         &kp R      &kp T     &trans  &kp Y      &kp U          &kp I      &kp O       &kp P            &kp LEFT_BRACKET
 &kp LEFT_CONTROL  &kp A      &kp S         &kp D         &kp F      &kp G     &trans  &kp H      &kp J          &kp K      &kp L       &kp SEMI         &kp APOS
 &kp LEFT_SHIFT    &kp Z      &kp X         &kp C         &kp V      &kp B     &trans  &kp N      &kp M          &kp COMMA  &kp DOT     &kp FSLH         &kp RIGHT_SHIFT
-&trans            &kp ENTER  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo 6     &trans  &kp ENTER  &kp BACKSPACE  &mo 2      &kp ESCAPE  &kp KP_NUMBER_1
+&trans            &kp ENTER  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo 7     &trans  &kp ENTER  &kp BACKSPACE  &mo 2      &kp ESCAPE  &kp KP_NUMBER_1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
