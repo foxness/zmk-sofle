@@ -262,11 +262,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Arrow:
   - '0'
-  - '6'
-  - '7'
-  - '8'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - END
+  - Ins
+  - Gui+0
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - F16
   - F17
@@ -274,12 +274,12 @@ layers:
   - F19
   - F20
   - F21
-  - '9'
+  - PgUp
   - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Alt+$$mdi:arrow-right-bold$$
-  - HOME
-  - PgUp
+  - {t: Gui+=, s: Gui++}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F15
   - F4
@@ -287,12 +287,12 @@ layers:
   - F6
   - F10
   - F22
-  - {t: '`', s: '~'}
+  - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - END
-  - PgDn
+  - {t: Gui+-, s: Gui+_}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F14
   - F1
@@ -300,9 +300,9 @@ layers:
   - F3
   - F11
   - F23
-  - {t: Gui+-, s: Gui+_}
-  - {t: Gui+=, s: Gui++}
-  - Gui+0
+  - {t: '`', s: '~'}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
