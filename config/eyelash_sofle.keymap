@@ -116,9 +116,9 @@
             display-name = "Triangle";
             bindings = <
 &kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp RA(N6)           &kp RA(N7)           &kp RA(N8)           &kp RA(N9)           &kp RA(N0)           &kp RA(KP_NUMBER_7)
-&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp LA(LEFT)         &kp PAGE_DOWN        &kp PAGE_UP          &kp LA(RIGHT)        &kp LG(BACKSPACE)    &kp RA(LEFT_BRACKET)
+&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp LA(LEFT)         &kp PAGE_DOWN        &kp PAGE_UP          &kp LA(RIGHT)        &kp RA(P)            &kp RA(LEFT_BRACKET)
 &mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp LA(BACKSPACE)    &kp LEFT             &kp DOWN             &kp UP               &kp RIGHT            &kp RA(APOS)
-&mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp LG(LEFT)         &kp HOME             &kp END              &kp LG(RIGHT)        &kp RA(SLASH)        &kp RA(KP_NUMBER_6)
+&mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp MINUS            &kp HOME             &kp END              &kp EQUAL            &kp RA(SLASH)        &kp RA(KP_NUMBER_6)
 &trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &kp RA(KP_NUMBER_5)
             >;
 
