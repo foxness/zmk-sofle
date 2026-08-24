@@ -347,10 +347,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F15
-  - F4
   - F5
   - F6
-  - F10
+  - F7
+  - F8
   - F22
   - PgDn
   - $$mdi:arrow-left-bold$$
@@ -363,7 +363,7 @@ layers:
   - F1
   - F2
   - F3
-  - F11
+  - F4
   - F23
   - {t: '`', s: '~'}
   - {t: '-', s: _}
@@ -373,9 +373,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F13
-  - F7
-  - F8
   - F9
+  - F10
+  - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
