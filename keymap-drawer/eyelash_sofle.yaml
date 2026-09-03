@@ -73,12 +73,12 @@ layers:
   - {t: AltGr+4, s: AltGr+$}
   - {t: AltGr+5, s: AltGr+%}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: AltGr+6, s: AltGr+^}
-  - {t: AltGr+7, s: AltGr+&}
-  - {t: AltGr+8, s: AltGr+*}
-  - {t: AltGr+9, s: AltGr+(}
-  - {t: AltGr+0, s: AltGr+)}
-  - AltGr+KP 7
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - Ins
+  - $$mdi:backspace-reverse-outline$$
+  - PRINTSCREEN
+  - PAUSE BREAK
   - AltGr+$$mdi:keyboard-tab$$
   - AltGr+Q
   - AltGr+W
@@ -86,10 +86,10 @@ layers:
   - AltGr+R
   - AltGr+T
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+$$mdi:arrow-left-bold$$
+  - HOME
   - PgDn
   - PgUp
-  - Alt+$$mdi:arrow-right-bold$$
+  - END
   - AltGr+P
   - {t: 'AltGr+[', s: 'AltGr+{'}
   - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
@@ -113,8 +113,8 @@ layers:
   - AltGr+B
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
-  - HOME
-  - END
+  - Alt+$$mdi:arrow-left-bold$$
+  - Alt+$$mdi:arrow-right-bold$$
   - {t: '=', s: +}
   - {t: AltGr+/, s: 'AltGr+?'}
   - AltGr+KP 6
