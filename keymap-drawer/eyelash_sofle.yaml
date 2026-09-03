@@ -60,9 +60,9 @@ layers:
   - Triangle
   - $$mdi:keyboard-space$$
   - Sft+KP 0
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - Square
+  - {t: '$$mdi:keyboard-esc$$', h: Square}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - Mouse
   - KP 1
   Triangle:
@@ -191,8 +191,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Circle:
@@ -450,9 +450,9 @@ layers:
   - $$mdi:keyboard-space$$
   - gaming_triangle
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - Square
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-esc$$
   - KP 1
   gaming_triangle:
