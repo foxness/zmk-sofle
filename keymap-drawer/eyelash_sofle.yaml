@@ -61,10 +61,10 @@ layers:
   - $$mdi:keyboard-space$$
   - Sft+KP 0
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '&key_repeat', h: Square}
+  - Square
+  - '&key_repeat'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Mouse
-  - KP 1
+  - {t: KP 1, h: Mouse}
   Triangle:
   - AltGr+$$mdi:keyboard-esc$$
   - {t: AltGr+1, s: AltGr+!}
@@ -323,8 +323,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   Arrow:
   - '0'
   - {t: '`', s: '~'}
