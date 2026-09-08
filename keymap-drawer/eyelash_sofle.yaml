@@ -75,8 +75,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
+  - $$mdi:apple-keyboard-caps$$
   - Ins
-  - $$mdi:backspace-reverse-outline$$
   - PRINTSCREEN
   - PAUSE BREAK
   - AltGr+$$mdi:keyboard-tab$$
@@ -99,11 +99,11 @@ layers:
   - AltGr+F
   - AltGr+G
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Alt+$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
+  - $$mdi:backspace-reverse-outline$$
   - {t: AltGr+', s: AltGr+"}
   - {t: 'AltGr+$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - AltGr+Z
@@ -131,7 +131,7 @@ layers:
   - AltGr+KP 4
   - Circle
   Square:
-  - $$mdi:apple-keyboard-caps$$
+  - Ctl+$$mdi:keyboard-esc$$
   - {t: Ctl+1, s: Ctl+!}
   - {t: Ctl+2, s: Ctl+@}
   - {t: Ctl+3, s: Ctl+#}
