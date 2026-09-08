@@ -124,9 +124,9 @@
         triangle_layer {
             display-name = "Triangle";
             bindings = <
-&kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &kp INSERT           &kp DELETE           &kp PRINTSCREEN  &kp PAUSE_BREAK
+&kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &kp CAPSLOCK         &kp INSERT           &kp PRINTSCREEN  &kp PAUSE_BREAK
 &kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp HOME             &kp PAGE_DOWN        &kp PAGE_UP          &kp END              &kp RA(P)        &kp RA(LEFT_BRACKET)
-&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp LA(BACKSPACE)    &kp LEFT             &kp DOWN             &kp UP               &kp RIGHT        &kp RA(APOS)
+&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp LEFT             &kp DOWN             &kp UP               &kp RIGHT            &kp DELETE       &kp RA(APOS)
 &mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp MINUS            &kp LA(LEFT)         &kp LA(RIGHT)        &kp EQUAL            &kp RA(SLASH)    &kp RA(KP_NUMBER_6)
 &trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &mo 3
             >;
@@ -137,11 +137,11 @@
         square_layer {
             display-name = "Square";
             bindings = <
-&kp CAPSLOCK   &kp RC(N1)  &kp RC(N2)        &kp RC(N3)           &kp RC(N4)           &kp RC(N5)    &trans  &kp RC(N6)  &kp RC(N7)  &kp RC(N8)     &kp RC(N9)   &kp RC(N0)    &kp RC(KP_NUMBER_1)
-&kp RC(TAB)    &kp RC(Q)   &kp RC(W)         &kp RC(E)            &kp RC(R)            &kp RC(T)     &trans  &kp RC(Y)   &kp RC(U)   &kp RC(I)      &kp RC(O)    &kp RC(P)     &kp RC(LEFT_BRACKET)
-&kp BACKSPACE  &kp RC(A)   &kp RC(S)         &kp RC(D)            &kp RC(F)            &kp RC(G)     &trans  &kp RC(H)   &kp RC(J)   &kp RC(K)      &kp RC(L)    &kp RC(SEMI)  &kp RC(APOS)
-&trans         &kp RC(Z)   &kp RC(X)         &kp RC(C)            &kp RC(V)            &kp RC(B)     &trans  &kp RC(N)   &kp RC(M)   &kp RC(COMMA)  &kp RC(DOT)  &kp RC(FSLH)  &trans
-&trans         &trans      &kp LEFT_COMMAND  &kp RC(KP_NUMBER_3)  &kp RC(KP_NUMBER_2)  &trans        &trans  &trans      &trans      &trans         &trans       &trans
+&kp RC(ESCAPE)  &kp RC(N1)  &kp RC(N2)        &kp RC(N3)           &kp RC(N4)           &kp RC(N5)    &trans  &kp RC(N6)  &kp RC(N7)  &kp RC(N8)     &kp RC(N9)   &kp RC(N0)    &kp RC(KP_NUMBER_1)
+&kp RC(TAB)     &kp RC(Q)   &kp RC(W)         &kp RC(E)            &kp RC(R)            &kp RC(T)     &trans  &kp RC(Y)   &kp RC(U)   &kp RC(I)      &kp RC(O)    &kp RC(P)     &kp RC(LEFT_BRACKET)
+&kp BACKSPACE   &kp RC(A)   &kp RC(S)         &kp RC(D)            &kp RC(F)            &kp RC(G)     &trans  &kp RC(H)   &kp RC(J)   &kp RC(K)      &kp RC(L)    &kp RC(SEMI)  &kp RC(APOS)
+&trans          &kp RC(Z)   &kp RC(X)         &kp RC(C)            &kp RC(V)            &kp RC(B)     &trans  &kp RC(N)   &kp RC(M)   &kp RC(COMMA)  &kp RC(DOT)  &kp RC(FSLH)  &trans
+&trans          &trans      &kp LEFT_COMMAND  &kp RC(KP_NUMBER_3)  &kp RC(KP_NUMBER_2)  &trans        &trans  &trans      &trans      &trans         &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
