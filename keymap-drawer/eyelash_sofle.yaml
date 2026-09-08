@@ -60,9 +60,9 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: Triangle}
   - $$mdi:keyboard-space$$
   - Sft+KP 0
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - Square
   - '&key_repeat'
+  - Square
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: KP 1, h: Mouse}
   Triangle:
