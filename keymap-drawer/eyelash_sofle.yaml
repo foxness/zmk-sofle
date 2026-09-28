@@ -75,8 +75,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - $$mdi:apple-keyboard-caps$$
-  - Ins
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - PRINTSCREEN
   - PAUSE BREAK
   - AltGr+$$mdi:keyboard-tab$$
@@ -86,12 +86,12 @@ layers:
   - AltGr+R
   - AltGr+T
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
+  - Alt+$$mdi:arrow-left-bold$$
   - PgDn
   - PgUp
-  - END
-  - AltGr+P
-  - {t: 'AltGr+[', s: 'AltGr+{'}
+  - Alt+$$mdi:arrow-right-bold$$
+  - $$mdi:alpha-w-box$$
+  - $$mdi:apple-keyboard-caps$$
   - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
   - AltGr+A
   - AltGr+S
@@ -99,12 +99,12 @@ layers:
   - AltGr+F
   - AltGr+G
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:backspace-reverse-outline$$
-  - {t: AltGr+', s: AltGr+"}
+  - Ins
   - {t: 'AltGr+$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - AltGr+Z
   - AltGr+X
@@ -112,12 +112,12 @@ layers:
   - AltGr+V
   - AltGr+B
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', s: _}
-  - Alt+$$mdi:arrow-left-bold$$
-  - Alt+$$mdi:arrow-right-bold$$
-  - {t: '=', s: +}
-  - {t: AltGr+/, s: 'AltGr+?'}
-  - AltGr+KP 6
+  - Gui+$$mdi:arrow-left-bold$$
+  - HOME
+  - END
+  - Gui+$$mdi:arrow-right-bold$$
+  - SCROLLLOCK
+  - KP NUMLOCK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
