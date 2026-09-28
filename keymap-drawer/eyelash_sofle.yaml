@@ -166,7 +166,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+H
   - Ctl+J
-  - Ctl+K
+  - '&key_repeat'
   - Ctl+L
   - {t: Ctl+;, s: 'Ctl+:'}
   - {t: Ctl+', s: Ctl+"}
@@ -188,7 +188,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - Ctl+KP 3
   - Ctl+KP 2
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+KP 1
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
