@@ -61,7 +61,7 @@ layers:
   - $$mdi:keyboard-space$$
   - Sft+KP 0
   - '&key_repeat'
-  - Square
+  - {t: '$$mdi:keyboard-return$$', h: Square}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: KP 1, h: Mouse}
