@@ -90,7 +90,7 @@ layers:
   - PgDn
   - PgUp
   - Alt+$$mdi:arrow-right-bold$$
-  - $$mdi:alpha-w-box$$
+  - Ins
   - $$mdi:apple-keyboard-caps$$
   - {t: AltGr+`, h: '$$mdi:apple-keyboard-control$$', s: AltGr+~}
   - AltGr+A
@@ -99,12 +99,12 @@ layers:
   - AltGr+F
   - AltGr+G
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - Ins
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:alpha-w-box$$
   - {t: 'AltGr+$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - AltGr+Z
   - AltGr+X
