@@ -125,8 +125,8 @@
             display-name = "Triangle";
             bindings = <
 &kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &kp MINUS            &kp EQUAL            &kp PRINTSCREEN  &kp PAUSE_BREAK
-&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp LA(LEFT)         &kp PAGE_DOWN        &kp PAGE_UP          &kp LA(RIGHT)        &caps_word       &kp CAPSLOCK
-&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp DELETE           &kp LEFT             &kp DOWN             &kp UP               &kp RIGHT        &kp INSERT
+&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp LA(LEFT)         &kp PAGE_DOWN        &kp PAGE_UP          &kp LA(RIGHT)        &kp INSERT       &kp CAPSLOCK
+&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp LEFT             &kp DOWN             &kp UP               &kp RIGHT            &kp DELETE       &caps_word
 &mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp LG(LEFT)         &kp HOME             &kp END              &kp LG(RIGHT)        &kp SCROLLLOCK   &kp KP_NUMLOCK
 &trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &mo 3
             >;
