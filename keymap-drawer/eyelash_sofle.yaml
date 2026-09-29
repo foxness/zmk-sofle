@@ -63,7 +63,7 @@ layers:
   - '&key_repeat'
   - {t: '$$mdi:keyboard-return$$', h: Square}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:backspace-reverse-outline$$
   - {t: KP 1, h: Mouse}
   Triangle:
   - AltGr+$$mdi:keyboard-esc$$
