@@ -327,9 +327,9 @@ layers:
   - {type: held}
   Arrow:
   - '0'
-  - {t: '`', s: '~'}
   - HOME
   - END
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
