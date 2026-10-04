@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '`', h: '$$mdi:apple-keyboard-shift$$', s: '~'}
+  - {t: '0', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -326,7 +326,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   Arrow:
-  - '0'
+  - {t: '`', s: '~'}
   - HOME
   - END
   - {t: '$$mdi:transfer$$', type: trans}
