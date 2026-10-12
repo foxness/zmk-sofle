@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: Square}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
-  - {t: KP 1, h: Gaming}
+  - {t: KP 1, h: Mouse}
   Triangle:
   - AltGr+$$mdi:keyboard-esc$$
   - {t: AltGr+1, s: AltGr+!}
@@ -389,7 +389,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   Gaming:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
@@ -454,7 +454,7 @@ layers:
   - F
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-esc$$
-  - {t: KP 1, type: held}
+  - KP 1
   gaming_triangle:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -519,7 +519,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   System:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -584,4 +584,4 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&soft_off', type: held alternate}
+  - '&soft_off'
