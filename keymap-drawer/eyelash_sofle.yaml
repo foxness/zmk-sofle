@@ -63,7 +63,7 @@ layers:
   - '&key_repeat'
   - {t: '$$mdi:keyboard-esc$$', h: Square}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:alpha-w-box$$
   - {t: KP 1, h: Mouse}
   Triangle:
   - AltGr+$$mdi:keyboard-esc$$
@@ -104,7 +104,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:alpha-w-box$$
+  - $$mdi:backspace-reverse-outline$$
   - {t: 'AltGr+$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - AltGr+Z
   - AltGr+X
