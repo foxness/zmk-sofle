@@ -126,10 +126,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+KP 1
-  - {t: AltGr+KP 2, h: Circle}
+  - AltGr+KP 2
   - AltGr+KP 3
   - AltGr+KP 4
-  - AltGr+KP 5
+  - {t: AltGr+KP 5, h: Circle}
   Square:
   - Ctl+$$mdi:keyboard-esc$$
   - {t: Ctl+1, s: Ctl+!}
@@ -256,10 +256,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   Arrow:
   - {t: '`', s: '~'}
   - HOME
