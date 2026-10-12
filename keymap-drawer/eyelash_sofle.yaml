@@ -451,9 +451,9 @@ layers:
   - gaming_triangle
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - F
-  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - KP 1
   gaming_triangle:
   - {t: '$$mdi:transfer$$', type: trans}
