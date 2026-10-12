@@ -63,7 +63,7 @@ layers:
   - '&key_repeat'
   - {t: '$$mdi:keyboard-esc$$', h: Square}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:alpha-w-box$$
+  - Ctl+F20
   - {t: KP 1, h: Mouse}
   Triangle:
   - AltGr+$$mdi:keyboard-esc$$
