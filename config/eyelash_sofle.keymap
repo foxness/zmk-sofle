@@ -30,6 +30,10 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE SEMICOLON>; };
 
+&mt { tapping-term-ms = <150>; };
+
+&lt { tapping-term-ms = <150>; };
+
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
