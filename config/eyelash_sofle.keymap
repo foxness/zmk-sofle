@@ -155,7 +155,7 @@
             display-name = "Square";
             bindings = <
 &kp RC(ESCAPE)  &kp TILDE      &kp AT                &kp HASH    &kp PERCENT            &kp BACKSLASH    &trans  &kp RC(N6)    &kp RC(N7)     &kp PERIOD        &kp RC(N9)    &kp RC(N0)      &kp RC(KP_NUMBER_1)
-&kp RC(TAB)     &kp CARET      &kp LEFT_BRACE        &kp DOLLAR  &kp RIGHT_BRACE        &kp ASTERISK     &trans  &kp SLASH     &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS     &kp COMMA       &kp RC(LEFT_BRACKET)
+&kp RC(TAB)     &kp CARET      &kp LEFT_BRACE        &kp DOLLAR  &kp RIGHT_BRACE        &kp ASTERISK     &trans  &kp SLASH     &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS     &kp COMMA       &kp DOUBLE_QUOTES
 &trans          &kp COLON      &kp LEFT_PARENTHESIS  &kp EQUAL   &kp RIGHT_PARENTHESIS  &kp PLUS         &trans  &kp NUMBER_0  &kp SPACE      &key_repeat       &kp QUESTION  &kp UNDERSCORE  &kp APOSTROPHE
 &trans          &kp SEMICOLON  &kp LEFT_BRACKET      &kp PIPE    &kp RIGHT_BRACKET      &kp AMPERSAND    &trans  &kp RC(N)     &kp RC(M)      &kp RC(COMMA)     &kp RC(DOT)   &kp RC(FSLH)    &trans
 &trans          &trans         &kp LEFT_COMMAND      &kp GRAVE   &kp EXCLAMATION        &kp SPACE        &trans  &trans        &trans         &trans            &trans        &trans
