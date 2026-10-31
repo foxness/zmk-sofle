@@ -141,11 +141,11 @@
         triangle_layer {
             display-name = "Triangle";
             bindings = <
-&kp RA(ESCAPE)              &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &kp MINUS            &kp EQUAL            &kp PRINTSCREEN        &kp PAUSE_BREAK
-&kp RA(TAB)                 &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp LA(LEFT)         &kp PAGE_DOWN        &kp PAGE_UP          &kp LA(RIGHT)        &kp INSERT             &kp CAPSLOCK
-&mt LEFT_CONTROL RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp LEFT             &kp DOWN             &kp UP               &kp RIGHT            &kp ENTER              &kp DELETE
-&mt LEFT_SHIFT RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp LG(LEFT)         &kp HOME             &kp END              &kp LG(RIGHT)        &kp SCROLLLOCK         &kp KP_NUMLOCK
-&trans                      &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &lt 3 RA(KP_NUMBER_5)
+&kp RA(ESCAPE)                &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp RA(N4)  &kp RA(N5)    &trans  &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &kp MINUS            &kp EQUAL            &kp PRINTSCREEN          &kp PAUSE_BREAK
+&kp RA(TAB)                   &kp RA(Q)   &kp RA(W)   &kp RA(E)   &kp RA(R)   &kp RA(T)     &trans  &kp LA(LEFT)         &kp PAGE_DOWN        &kp PAGE_UP          &kp LA(RIGHT)        &kp INSERT               &kp CAPSLOCK
+&mt (LEFT_CONTROL) RA(GRAVE)  &kp RA(A)   &kp RA(S)   &kp RA(D)   &kp RA(F)   &kp RA(G)     &trans  &kp LEFT             &kp DOWN             &kp UP               &kp RIGHT            &kp ENTER                &kp DELETE
+&mt (LEFT_SHIFT) RA(ENTER)    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)     &trans  &kp LG(LEFT)         &kp HOME             &kp END              &kp LG(RIGHT)        &kp SCROLLLOCK           &kp KP_NUMLOCK
+&trans                        &trans      &trans      &trans      &trans      &trans        &trans  &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_3)  &kp RA(KP_NUMBER_4)  &lt (3) RA(KP_NUMBER_5)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -154,11 +154,11 @@
         square_layer {
             display-name = "Square";
             bindings = <
-&kp RC(ESCAPE)  &kp RC(N1)  &kp RC(N2)        &kp RC(N3)           &kp RC(N4)           &kp RC(N5)             &trans  &kp RC(N6)  &kp RC(N7)  &kp RC(N8)     &kp RC(N9)   &kp RC(N0)    &kp RC(KP_NUMBER_1)
-&kp RC(TAB)     &kp RC(Q)   &kp RC(W)         &kp RC(E)            &kp RC(R)            &kp RC(T)              &trans  &kp RC(Y)   &kp RC(U)   &kp RC(I)      &kp RC(O)    &kp RC(P)     &kp RC(LEFT_BRACKET)
-&trans          &kp RC(A)   &kp RC(S)         &kp RC(D)            &kp RC(F)            &kp RC(G)              &trans  &kp RC(H)   &kp RC(J)   &key_repeat    &kp RC(L)    &kp RC(SEMI)  &kp RC(APOS)
-&trans          &kp RC(Z)   &kp RC(X)         &kp RC(C)            &kp RC(V)            &kp RC(B)              &trans  &kp RC(N)   &kp RC(M)   &kp RC(COMMA)  &kp RC(DOT)  &kp RC(FSLH)  &trans
-&trans          &trans      &kp LEFT_COMMAND  &kp RC(KP_NUMBER_3)  &kp RC(KP_NUMBER_2)  &kp RC(KP_NUMBER_1)    &trans  &trans      &trans      &trans         &trans       &trans
+&kp RC(ESCAPE)  &kp TILDE      &kp AT            &kp HASH              &kp PERCENT            &kp BACKSLASH    &trans  &kp RC(N6)  &kp RC(N7)     &kp RC(N8)        &kp RC(N9)   &kp RC(N0)      &kp RC(KP_NUMBER_1)
+&kp RC(TAB)     &kp CARET      &kp DOLLAR        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK     &trans  &kp SLASH   &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS    &kp COMMA       &kp RC(LEFT_BRACKET)
+&trans          &kp QUESTION   &kp EQUAL         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS         &trans  &kp PERIOD  &kp SPACE      &key_repeat       &kp GRAVE    &kp UNDERSCORE  &kp APOSTROPHE
+&trans          &kp SEMICOLON  &kp PIPE          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND    &trans  &kp RC(N)   &kp RC(M)      &kp RC(COMMA)     &kp RC(DOT)  &kp RC(FSLH)    &trans
+&trans          &trans         &kp LEFT_COMMAND  &kp COLON             &kp EXCLAMATION        &kp SPACE        &trans  &trans      &trans         &trans            &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
